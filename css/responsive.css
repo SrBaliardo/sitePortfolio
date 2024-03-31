@@ -1,0 +1,457 @@
+@media screen and (max-width: 1180px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .btn-top {
+        font-size: 2.7rem;
+    }
+
+    .border {
+        width: 290px;
+        height: 290px;
+    }
+
+    .border::before {
+        inset: -10px 95px;
+    }
+
+    .initial h1 {
+        font-size: 3.7rem;
+    }
+
+    .initial h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1035px) {
+
+    /* ----------------------- MIDLE ----------------------- */
+
+    .skills h3 {
+        font-size: 1.4rem;
+    }
+
+    .skills p {
+        font-size: 1.2rem;
+    }
+
+    .skills-icons ul {
+        font-size: 2.7rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1010px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .btn-top {
+        font-size: 2.3rem;
+    }
+
+    .border {
+        width: 270px;
+        height: 270px;
+    }
+
+    .border::before {
+        inset: -10px 75px;
+    }
+
+    .initial h1 {
+        font-size: 3.4rem;
+    }
+
+    .initial h2 {
+        font-size: 1.4rem;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */
+
+    .about p {
+        font-size: .9rem;
+    }
+    
+    .about span {
+        font-size: 1.3rem;
+    }
+
+    .img-me {
+        width: 170px;
+        height: 170px;
+    }
+
+    .skills h3 {
+        font-size: 1.4rem;
+    }
+
+    .skills p {
+        font-size: 1.2rem;
+    }
+    
+    .skills-icons ul {
+        font-size: 2.7rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 970px) {
+
+/* ----------------------- MIDLE ----------------------- */
+
+    .skills h3 {
+        font-size: 1.3rem;
+    }
+
+    .skills p {
+        font-size: 1.1rem;
+    }
+    
+    .skills-icons ul {
+        font-size: 2.5rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 920px) {
+
+    /* ----------------------- MIDLE ----------------------- */
+    
+    .skills h3 {
+        font-size: 1.2rem;
+    }
+    
+    .skills p {
+        font-size: 1rem;
+    }
+        
+    .skills-icons ul {
+        font-size: 2.3rem;
+    }
+}
+    
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 930px) {
+    
+    /* ----------------------- MIDLE ----------------------- */
+
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .about span {
+        font-size: 1.5rem;
+    }
+
+    .img-me {
+        display: none;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 830px) {
+    
+    /* ----------------------- MIDLE ----------------------- */
+
+    .about p {
+        font-size: 1rem;
+    }
+    
+    .about span {
+        font-size: 1.5rem;
+    }
+
+    #toggle {
+        visibility: visible;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 780px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .btn-top {
+        font-size: 2.1rem;
+    }
+
+    .border {
+        width: 240px;
+        height: 240px;
+    }
+
+    .border::before {
+        inset: -10px 65px;
+    }
+
+    .initial h1 {
+        font-size: 3.1rem;
+    }
+
+    .initial h2 {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 1.3rem;
+    }
+
+    .icontacts i {
+        font-size: 1.9rem;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */
+
+    .sections h2 {
+        font-size: 2.3rem;
+    }
+        
+    .skills-icons ul {
+        font-size: 2.1rem;
+    }
+
+    /* ----------------------- INFERIOR ----------------------- */
+
+    footer h2 {
+        font-size: 2.3rem;
+    }
+
+    footer i {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 735px) {
+
+    /* ----------------------- MIDLE ----------------------- */   
+    
+    .skills-icons ul {
+        font-size: 1.9rem;
+    }
+
+    .skills-stack {
+        flex-direction: column;
+    }
+} 
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 695px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .btn-top {
+        font-size: 2rem;
+    }
+
+    .border {
+        display: none;
+    }
+
+    .initial-infos {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .initial h1 {
+        font-size: 3rem;
+    }
+
+    .initial h2 {
+        font-size: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .icontacts i {
+        font-size: 1.7rem;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */
+
+    .sections h2 {
+        font-size: 2.1rem;
+    }
+    
+    /* ----------------------- INFERIOR ----------------------- */
+
+    footer h2 {
+        font-size: 2.1rem;
+    }
+
+    footer i {
+        font-size: 1.6rem;
+    }
+
+    footer i span, .c, p {
+        font-size: .9rem;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 617px) {
+
+    /* ----------------------- MIDLE ----------------------- */   
+    
+    .skills p {
+        font-size: .9rem;
+    }
+    
+    /* ----------------------- INFERIOR ----------------------- */
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer h2 {
+        font-size: 2.1rem;
+        text-align: center;
+        transition: .3s ease;
+    }
+
+    footer i {
+        font-size: 1.6rem;
+    }
+
+    footer i span, .c, p {
+        font-size: .9rem;
+    }
+
+    footer p {
+        bottom: 0px;
+        padding: 15px;
+        position: inherit;
+        text-align: center;
+    }
+
+    .box-contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease;
+    }
+} 
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 570px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        visibility: visible;
+    }
+
+    nav ul.active {
+        display: block;
+        gap: 5px;
+        top: 75px;
+        right: 95px;
+        position: absolute;
+        transition: .3s ease;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */   
+    
+    .skills h3 {
+        font-size: 1rem;
+    }
+    
+    .skills-icons ul {
+        font-size: 1.5rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 548px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .border {
+        display: none;
+    }
+
+    .initial-infos {
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .initial h1 {
+        font-size: 3rem;
+    }
+
+    .initial h2 {
+        font-size: 1rem;
+    }
+
+    .icontacts i {
+        font-size: 1.9rem;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */
+
+    .skills p {
+        font-size: .8rem;
+    }
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 460px) {
+
+    /* ----------------------- INFERIOR ----------------------- */
+
+    footer p {
+        font-size: .7rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 430px) {
+
+    /* ----------------------- MIDLE ----------------------- */  
+
+    .skills p {
+        line-height: 21px;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 390px) {
+
+
+}
+
+
+
+
+
