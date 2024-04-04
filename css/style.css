@@ -29,6 +29,8 @@ body::after {
     transition: .3s ease;
     cursor: pointer;
     z-index: 1;
+    background: none;
+    border: none;
 }
 
 .btn-top:active {
@@ -647,11 +649,3 @@ footer p {
     transition: .3s ease;
     text-align: right;
 }
-
-/* .all-rights {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    display: none;
-} */

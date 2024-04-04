@@ -17,8 +17,8 @@
         <header id="top">
             <img class="logo" src="./images/logo_jhab-dev.png" alt="logo_jhab-dev">
             <i class="fas fa-hamburger hamburger"></i>
-            <nav>
-                <ul>
+            <nav id="header-nav">
+                <ul id="header-menu">
                     <li><a href="#about">Sobre mim</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#projects">Projetos</a></li>
@@ -29,7 +29,7 @@
 
         <div class="initial">
             <div class="initial-infos">
-                <h1>John Baliardo</h1>
+                <h1 class="h1-initial-infos">John Baliardo</h1>
                 <h2><span>< </span>Desenvolvedor <span class="function"></span><span> ></span></h2>
                 <ul class="icontacts">
                     <a href="https://www.linkedin.com/in/john-baliardo" target="_blank">
@@ -48,17 +48,15 @@
             </div>
         </div>
     </div>
-    <a href="#top" class="far fa-arrow-alt-circle-up btn-top"></a>
+    <button class="far fa-arrow-alt-circle-up btn-top"></button>
     <main>        
         <div class="sections">
             <section class="about"id="about">
                 <h2>Sobre mim</h2>                
                 <div class="box-about">
-                    <p class="text-about"><span><i class="fas fa-quote-left"></i> </span>Sempre me interessei pela área de tecnologia como um todo. Estive sempre orbitando ao redor de um computador e sistemas. Durante algum tempo fui instrutor e ensinei desde o Windows e Office até ferramentas como Photoshop e Corel Draw. 
+                    <p class="text-about"><span><i class="fas fa-quote-left"></i> </span>Sempre me interessei pela área de tecnologia como um todo. Estive sempre orbitando ao redor de um computador e sistemas.
                     <br>
-                    Tive contato bem cedo com o universo Front-End e logo me interessei pelo Back-End. 
-                    <br>
-                    Fiz alguns trabalhos como freelancer Front-End e também em edição de imagens e trabalhos gráficos como criação de logos, artes, vetorização, etc.
+                    Tive contato bem cedo com o universo Front-End e logo me interessei pelo Back-End. Fiz alguns trabalhos como freelancer Front-End e também em edição de imagens e trabalhos gráficos como criação de logos, artes, vetorização, etc.
                     <br>
                     Atualmente estou buscando me qualificar para - function(Full_Stack)<span> <i class="fas fa-quote-right"></i></span><span id="overflow" data-state="visible" aria-hidden="true"></span></p>
                     <button id="toggle" data-state="more">Leia mais...</button>
@@ -122,7 +120,7 @@
                     </div>
 
                     <div class="skills-block-3">
-                        <h3>Conhecimentos adicionais e softskills</h3>
+                        <h3 class="h3-softskills">Conhecimentos adicionais e softskills</h3>
                         <div>
                             <p><i class="fas fa-puzzle-piece"></i> Conhecimento das práticas de controle de versões (GIT e GitHub).</p>
                             <p><i class="fas fa-puzzle-piece"></i> Análise de Dados e dashboards com Python e Power BI.</p>
@@ -168,13 +166,14 @@
                     </a>
                 </ul>
             </div>
-            <p><span class="far fa-copyright c"></span> 2024 JHAB Dev<br>Todos os direitos reservados</p>
+            <p><span class="far fa-copyright c"></span> 2024 JHAB Dev - Todos os direitos reservados</p>
         </div>
     </footer>
 
     <script src="https://kit.fontawesome.com/62ed73a01b.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./js/typeFunction.js"></script>
+    <script src="./js/btnTop.js"></script>
     <script src="./js/btnReadMore.js"></script>
     <script src="./js/showActive.js"></script>
     <script src="./js/getApi.js"></script>

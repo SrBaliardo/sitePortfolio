@@ -4,6 +4,7 @@ const overflow = document.getElementById('overflow');
 const btnShowMore = document.getElementById('toggle');
 
 function toggle(event) {
+    event.preventDefault();
     textAbout.style.maxHeight = event.target.dataset.state === 'more' ? `${textAbout.scrollHeight}px` : `${textInitHeight}px`;
     event.target.setAttribute(
         'data-state',
@@ -19,3 +20,4 @@ function toggle(event) {
 }
 
 btnShowMore.addEventListener('click', toggle);
+btnShowMore.addEventListener('touchstart', toggle);

@@ -168,11 +168,6 @@
     .about span {
         font-size: 1.5rem;
     }
-
-    #toggle {
-        visibility: visible;
-    }
-
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -230,6 +225,17 @@
         font-size: 1.7rem;
     }
 
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 752px) {
+    
+    /* ----------------------- MIDLE ----------------------- */
+
+    #toggle {
+        visibility: visible;
+    }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -307,14 +313,8 @@
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 617px) {
+@media screen and (max-width: 640px) {
 
-    /* ----------------------- MIDLE ----------------------- */   
-    
-    .skills p {
-        font-size: .9rem;
-    }
-    
     /* ----------------------- INFERIOR ----------------------- */
 
     footer {
@@ -323,25 +323,33 @@
         flex-direction: column;
     }
 
-    footer h2 {
-        font-size: 2.1rem;
-        text-align: center;
-        transition: .3s ease;
-    }
-
-    footer i {
-        font-size: 1.6rem;
-    }
-
-    footer i span, .c, p {
-        font-size: .9rem;
+    footer i, span {
+        font-size: 1.3rem;
     }
 
     footer p {
         bottom: 0px;
-        padding: 15px;
-        position: inherit;
+        position: absolute;
         text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding: 25px;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 617px) {
+
+    /* ----------------------- MIDLE ----------------------- */   
+    
+    .skills p {
+        font-size: .9rem;
     }
 
     .box-contact {
@@ -376,6 +384,14 @@
     }
 
     /* ----------------------- MIDLE ----------------------- */   
+
+    .about p {
+        font-size: .9rem;
+    }
+    
+    .about span {
+        font-size: 1.3rem;
+    }
     
     .skills h3 {
         font-size: 1rem;
@@ -416,6 +432,14 @@
 
     /* ----------------------- MIDLE ----------------------- */
 
+    .about p {
+        font-size: .8rem;
+    }
+    
+    .about span {
+        font-size: 1.2rem;
+    }
+
     .skills p {
         font-size: .8rem;
     }
@@ -428,16 +452,22 @@
 
     /* ----------------------- INFERIOR ----------------------- */
 
-    footer p {
-        font-size: .7rem;
-    }
+
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 435px) {
 
     /* ----------------------- MIDLE ----------------------- */  
+
+    .about p {
+        font-size: .6rem;
+    }
+    
+    .about span {
+        font-size: 1rem;
+    }
 
     .skills p {
         line-height: 21px;
@@ -446,12 +476,76 @@
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
 
+    /* ----------------------- SUPERIOR ----------------------- */  
+
+    .h1-initial-infos {
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */  
 
 }
 
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
+@media screen and (max-width: 385px) {
 
+    /* ----------------------- MIDLE ----------------------- */
 
+    .about h2,
+    .about p,
+    .about span,
+    .box-about,
+    #toggle {
+        display: none;
+    }
 
+    .box-btn-ctt {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 105px;
+    }
+
+    .skills p, .h3-softskills {
+        display: none;
+    }
+
+    .box-skills {
+        justify-content: center;
+    }
+
+    /* ----------------------- INFERIOR ----------------------- */
+
+    footer p {
+        font-size: .7rem;
+    }
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 340px) {
+
+    /* ----------------------- MIDLE ----------------------- */
+    
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 320px) {
+
+    /* ----------------------- SUPERIOR ----------------------- */
+
+    .initial-infos span,
+    .initial-infos h2 {
+        display: none;
+    }
+
+    /* ----------------------- MIDLE ----------------------- */
+    
+
+}
