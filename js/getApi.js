@@ -1,20 +1,20 @@
-const repositories = document.querySelector('.box-cards');
+const repositories = document.querySelector('.box-cards')
 
 function getApiGutHub() {
     fetch('https://api.github.com/users/SrBaliardo/repos')
         .then(async res => {
             if(!res.ok) {
-                throw new Error(res.status);
+                throw new Error(res.status)
             }
 
-            let data = await res.json();
+            let data = await res.json()
             data.map(item => {
-                let cardProject = document.createElement('div');
+                let cardProject = document.createElement('div')
                 
                 cardProject.innerHTML = `
                 <div class="card">
                     <div class="card-content">
-                        <img class="img-card" src="./images/animation_${item.name}.gif" draggable="false">
+                        <img class="img-card" src="./images/animation_${item.name}.gif" draggable="false" onError="this.onerror=null;this.src='./images/code_working.gif';">
                         <h5 class="title-project">${item.name}</h5>
                         <p class="desc-project">${item.description}</p>
                         <div class="btn-card">
@@ -32,7 +32,7 @@ function getApiGutHub() {
                 </div>
                 `
                 
-                repositories.appendChild(cardProject);
+                repositories.appendChild(cardProject)
               
             })
         })

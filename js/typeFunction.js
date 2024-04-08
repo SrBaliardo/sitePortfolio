@@ -3,4 +3,4 @@ const typing = new Typed('.function', {
     typeSpeed: 101,
     backSpeed: 101,
     loop: true
-});
+})
