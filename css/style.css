@@ -5,6 +5,7 @@ body {
     background-attachment: fixed;
     color: #A531B4;
     font-family: 'Gugi';
+    width: 100vw;
 }
 
 body::after {
@@ -95,14 +96,12 @@ header {
 nav, a {
     color: #05F1C7;
     font-size: 1.5rem;
-    text-decoration: none;
-    transition: .3s ease;
+    transition: .1s ease;
 }
 
 nav ul {
     display: flex;
     gap: 25px;
-    list-style-type: none;
     cursor: pointer;
     transition: .3s ease;
 }
