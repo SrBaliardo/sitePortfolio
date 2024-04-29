@@ -39,9 +39,6 @@
         font-size: 1.2rem;
     }
 
-    .skills-icons ul {
-        font-size: 2.7rem;
-    }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -97,6 +94,7 @@
     .skills-icons ul {
         font-size: 2.7rem;
     }
+
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -249,6 +247,10 @@
         font-size: 1.9rem;
     }
 
+    .skills-icons i span {
+        font-size: .9rem;
+    }
+
     .skills-stack {
         flex-direction: column;
     }
@@ -378,8 +380,8 @@
     nav ul.active {
         display: block;
         gap: 5px;
-        top: 75px;
-        right: 95px;
+        top: 50px;
+        right: 70px;
         position: absolute;
         transition: .3s ease;
     }
@@ -435,6 +437,7 @@
 
     .about p {
         font-size: .8rem;
+        line-height: 25px;
     }
     
     .about span {
@@ -444,15 +447,6 @@
     .skills p {
         font-size: .8rem;
     }
-
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 460px) {
-
-    /* ----------------------- INFERIOR ----------------------- */
-
 
 }
 
@@ -494,19 +488,20 @@
 
     /* ----------------------- MIDLE ----------------------- */
 
-    .about h2,
-    .about p,
-    .about span,
-    .box-about,
+    .about p {
+        line-height: 17px;
+    }
+
+    .about p {
+        overflow: visible;
+    }
+
     #toggle {
         display: none;
     }
 
     .box-btn-ctt {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 105px;
+        display: none;
     }
 
     .skills p, .h3-softskills {
@@ -533,6 +528,10 @@
     .initial-infos span,
     .initial-infos h2 {
         display: none;
+    }
+
+    .card {
+        width: auto;
     }
 
 }
