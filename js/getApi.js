@@ -27,15 +27,29 @@ function getApiGutHub() {
                                 </button>
                             </a>
                         </div>
-                        <span class="language"><i class="fas fa-circle"></i> ${item.language}</span>
+                        <span class="language" data-language="${item.language}"><i class="fas fa-circle"></i> ${item.language}</span>
                     </div>
                 </div>
                 `
                 
                 repositories.appendChild(cardProject)
+                colorLanguage()
               
             })
         })
+}
+
+function colorLanguage() {
+    const languages = document.querySelectorAll('.language')
+        languages.forEach(language => {
+        let langItem = language.attributes['data-language'].value
+        if (langItem==='HTML') {
+            language.classList.add('html')
+        }else if (langItem==='CSS') {
+            language.classList.add('css')
+        }else if (langItem==='JavaScript') {
+            language.classList.add('javascript')
+        }})
 }
 
 getApiGutHub()

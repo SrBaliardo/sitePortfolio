@@ -1,7 +1,7 @@
 const carouselBox = document.querySelector('.box-project')
 const carousel = document.querySelector('.box-cards')
 const btnPrevNext = document.querySelectorAll('.btn-nav')
-const firstCardWidth = 290
+const firstCardWidth = 320
 let draggingOn = false, startX, startScrollLeft
 
 btnPrevNext.forEach(btn => {

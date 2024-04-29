@@ -468,6 +468,15 @@ main {
     z-index: 1;
     cursor: pointer;
     border: 0;
+    transition: .3s ease;
+}
+
+.btn-nav:hover {
+    transform: scale(115%);
+    text-shadow: 0 0 1px #05F1C7, 
+    0 0 5px #05F1C7, 
+    0 0 7px #05F1C7;
+    transition: .3s ease;
 }
 
 .btn-prev {
@@ -502,9 +511,10 @@ main {
 .card {
     margin-left: 15px;
     padding: 3px;
-    width: 290px;
+    width: 320px;
     cursor: grab;
     scroll-snap-align: start;
+    
 }
 
 .card:active,
@@ -520,16 +530,17 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 350px;
-    box-shadow: 0 0 3px #A531B4, 
-    0 0 7px #A531B4, 
-    0 0 10px #A531B4;
+    height: 450px;
+    box-shadow: 3px 3px 3px #A531B4, 
+    3px 3px 7px #A531B4, 
+    3px 3px 10px #A531B4;
     border-radius: 11px;
+    padding: 25px;
 }
 
 .img-card {
-    width: 100px;
-    height: 80px;
+    width: 130px;
+    height: 90px;
     margin-bottom: 20px;
 }
 
@@ -539,8 +550,8 @@ main {
     align-items: center;
     font-size: 21px;
     font-family: 'Dongle';
-    height: 120px;
-    max-height: 150px;
+    height: 170px;
+    max-height: 190px;
     width: 75%;
     color: #05F1C7;
     margin-top: 5px;
@@ -550,7 +561,7 @@ main {
 }
 
 .title-project{
-    font-size: 17px;
+    font-size: 21px;
     text-transform: capitalize;
     color: #5285F5;
 }
@@ -585,9 +596,8 @@ main {
     box-shadow: 0 0 3px #A531B4, 
     0 0 7px #A531B4, 
     0 0 10px #A531B4;
-    text-shadow: 0 0 .3px #A531B4, 
-    0 0 1.5px #A531B4, 
-    0 0 3px #A531B4;
+    text-shadow: 0 0 2px #A531B4, 
+    0 0 1px #A531B4;
     transition: .3s ease;
 }
 
@@ -597,8 +607,18 @@ main {
 
 .language {
     color: #5285F5;
-    margin-top: 25px;
+    margin-top: 55px;
     font-size: small;
+}
+
+.html {
+    color: #E34C26;
+}
+.css {
+    color: #563D7C;
+}
+.javascript {
+    color: #F1E05A;
 }
 
 /* ----------------------- INFERIOR ----------------------- */
