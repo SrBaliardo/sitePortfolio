@@ -1,537 +1,514 @@
 @media screen and (max-width: 1180px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .btn-top {
+    font-size: 2.7rem;
+  }
 
-    .btn-top {
-        font-size: 2.7rem;
-    }
+  .border {
+    width: 290px;
+    height: 290px;
+  }
 
-    .border {
-        width: 290px;
-        height: 290px;
-    }
+  .border::before {
+    inset: -10px 95px;
+  }
 
-    .border::before {
-        inset: -10px 95px;
-    }
+  .initial h1 {
+    font-size: 3.7rem;
+  }
 
-    .initial h1 {
-        font-size: 3.7rem;
-    }
-
-    .initial h2 {
-        font-size: 1.5rem;
-    }
-
+  .initial h2 {
+    font-size: 1.5rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1035px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .skills h3 {
+    font-size: 1.4rem;
+  }
 
-    .skills h3 {
-        font-size: 1.4rem;
-    }
-
-    .skills p {
-        font-size: 1.2rem;
-    }
-
+  .skills p {
+    font-size: 1.2rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 1010px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .btn-top {
+    font-size: 2.3rem;
+  }
 
-    .btn-top {
-        font-size: 2.3rem;
-    }
+  .border {
+    width: 270px;
+    height: 270px;
+  }
 
-    .border {
-        width: 270px;
-        height: 270px;
-    }
+  .border::before {
+    inset: -10px 75px;
+  }
 
-    .border::before {
-        inset: -10px 75px;
-    }
+  .initial h1 {
+    font-size: 3.4rem;
+  }
 
-    .initial h1 {
-        font-size: 3.4rem;
-    }
+  .initial h2 {
+    font-size: 1.4rem;
+  }
 
-    .initial h2 {
-        font-size: 1.4rem;
-    }
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .about p {
+    font-size: 0.9rem;
+  }
 
-    .about p {
-        font-size: .9rem;
-    }
-    
-    .about span {
-        font-size: 1.3rem;
-    }
+  .about span {
+    font-size: 1.3rem;
+  }
 
-    .img-me {
-        width: 170px;
-        height: 170px;
-    }
+  .img-me {
+    width: 170px;
+    height: 170px;
+  }
 
-    .skills h3 {
-        font-size: 1.4rem;
-    }
+  .skills h3 {
+    font-size: 1.4rem;
+  }
 
-    .skills p {
-        font-size: 1.2rem;
-    }
-    
-    .skills-icons ul {
-        font-size: 2.7rem;
-    }
+  .skills p {
+    font-size: 1.2rem;
+  }
 
+  .skills-icons ul {
+    font-size: 2.7rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 970px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-/* ----------------------- MIDLE ----------------------- */
+  .skills h3 {
+    font-size: 1.3rem;
+  }
 
-    .skills h3 {
-        font-size: 1.3rem;
-    }
+  .skills p {
+    font-size: 1.1rem;
+  }
 
-    .skills p {
-        font-size: 1.1rem;
-    }
-    
-    .skills-icons ul {
-        font-size: 2.5rem;
-    }
+  .skills-icons ul {
+    font-size: 2.5rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 920px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
-    
-    .skills h3 {
-        font-size: 1.2rem;
-    }
-    
-    .skills p {
-        font-size: 1rem;
-    }
-        
-    .skills-icons ul {
-        font-size: 2.3rem;
-    }
+  .skills h3 {
+    font-size: 1.2rem;
+  }
+
+  .skills p {
+    font-size: 1rem;
+  }
+
+  .skills-icons ul {
+    font-size: 2.3rem;
+  }
 }
-    
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 930px) {
-    
-    /* ----------------------- MIDLE ----------------------- */
+  /* ----------------------- MIDLE ----------------------- */
 
-    .about p {
-        font-size: 1rem;
-    }
-    
-    .about span {
-        font-size: 1.5rem;
-    }
+  .about p {
+    font-size: 1rem;
+  }
 
-    .img-me {
-        display: none;
-    }
+  .about span {
+    font-size: 1.5rem;
+  }
+
+  .img-me {
+    display: none;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 830px) {
-    
-    /* ----------------------- MIDLE ----------------------- */
+  /* ----------------------- MIDLE ----------------------- */
 
-    .about p {
-        font-size: 1rem;
-    }
-    
-    .about span {
-        font-size: 1.5rem;
-    }
+  .about p {
+    font-size: 1rem;
+  }
+
+  .about span {
+    font-size: 1.5rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 780px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .btn-top {
+    font-size: 2.1rem;
+  }
 
-    .btn-top {
-        font-size: 2.1rem;
-    }
+  .border {
+    width: 240px;
+    height: 240px;
+  }
 
-    .border {
-        width: 240px;
-        height: 240px;
-    }
+  .border::before {
+    inset: -10px 65px;
+  }
 
-    .border::before {
-        inset: -10px 65px;
-    }
+  .initial h1 {
+    font-size: 3.1rem;
+  }
 
-    .initial h1 {
-        font-size: 3.1rem;
-    }
+  .initial h2 {
+    font-size: 1.1rem;
+  }
 
-    .initial h2 {
-        font-size: 1.1rem;
-    }
+  nav a {
+    font-size: 1.3rem;
+  }
 
-    nav a {
-        font-size: 1.3rem;
-    }
+  .icontacts i {
+    font-size: 1.9rem;
+  }
 
-    .icontacts i {
-        font-size: 1.9rem;
-    }
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .sections h2 {
+    font-size: 2.3rem;
+  }
 
-    .sections h2 {
-        font-size: 2.3rem;
-    }
-        
-    .skills-icons ul {
-        font-size: 2.1rem;
-    }
+  .skills-icons ul {
+    font-size: 2.1rem;
+  }
 
-    /* ----------------------- INFERIOR ----------------------- */
+  /* ----------------------- INFERIOR ----------------------- */
 
-    footer h2 {
-        font-size: 2.3rem;
-    }
+  footer h2 {
+    font-size: 2.3rem;
+  }
 
-    footer i {
-        font-size: 1.7rem;
-    }
-
+  footer i {
+    font-size: 1.7rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 752px) {
-    
-    /* ----------------------- MIDLE ----------------------- */
+  /* ----------------------- MIDLE ----------------------- */
 
-    #toggle {
-        visibility: visible;
-    }
+  #toggle {
+    visibility: visible;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 735px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */   
-    
-    .skills-icons ul {
-        font-size: 1.9rem;
-    }
+  .skills-icons ul {
+    font-size: 1.9rem;
+  }
 
-    .skills-icons i span {
-        font-size: .9rem;
-    }
+  .skills-icons i span {
+    font-size: 0.9rem;
+  }
 
-    .skills-stack {
-        flex-direction: column;
-    }
-} 
+  .skills-stack {
+    flex-direction: column;
+  }
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 695px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .btn-top {
+    font-size: 2rem;
+  }
 
-    .btn-top {
-        font-size: 2rem;
-    }
+  .border {
+    display: none;
+  }
 
-    .border {
-        display: none;
-    }
+  .initial-infos {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .initial-infos {
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-    }
+  .initial h1 {
+    font-size: 3rem;
+  }
 
-    .initial h1 {
-        font-size: 3rem;
-    }
+  .initial h2 {
+    font-size: 1rem;
+  }
 
-    .initial h2 {
-        font-size: 1rem;
-    }
+  nav a {
+    font-size: 1rem;
+  }
 
-    nav a {
-        font-size: 1rem;
-    }
+  .icontacts i {
+    font-size: 1.7rem;
+  }
 
-    .icontacts i {
-        font-size: 1.7rem;
-    }
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .sections h2 {
+    font-size: 2.1rem;
+  }
 
-    .sections h2 {
-        font-size: 2.1rem;
-    }
-    
-    /* ----------------------- INFERIOR ----------------------- */
+  /* ----------------------- INFERIOR ----------------------- */
 
-    footer h2 {
-        font-size: 2.1rem;
-    }
+  footer h2 {
+    font-size: 2.1rem;
+  }
 
-    footer i {
-        font-size: 1.6rem;
-    }
+  footer i {
+    font-size: 1.6rem;
+  }
 
-    footer i span, .c, p {
-        font-size: .9rem;
-    }
-
+  footer i span,
+  .c,
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 640px) {
+  /* ----------------------- INFERIOR ----------------------- */
 
-    /* ----------------------- INFERIOR ----------------------- */
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+  footer i,
+  span {
+    font-size: 1.3rem;
+  }
 
-    footer i, span {
-        font-size: 1.3rem;
-    }
+  footer p {
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+  }
 
-    footer p {
-        bottom: 0px;
-        position: absolute;
-        text-align: center;
-    }
-
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        padding: 25px;
-    }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 25px;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 617px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */   
-    
-    .skills p {
-        font-size: .9rem;
-    }
+  .skills p {
+    font-size: 0.9rem;
+  }
 
-    .box-contact {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: .3s ease;
-    }
-} 
+  .box-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+  }
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 570px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  nav ul {
+    display: none;
+  }
 
-    nav ul {
-        display: none;
-    }
+  .hamburger {
+    visibility: visible;
+  }
 
-    .hamburger {
-        visibility: visible;
-    }
+  nav ul.active {
+    display: block;
+    gap: 5px;
+    top: 50px;
+    right: 70px;
+    position: absolute;
+    transition: 0.3s ease;
+  }
 
-    nav ul.active {
-        display: block;
-        gap: 5px;
-        top: 50px;
-        right: 70px;
-        position: absolute;
-        transition: .3s ease;
-    }
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */   
+  .about p {
+    font-size: 0.9rem;
+  }
 
-    .about p {
-        font-size: .9rem;
-    }
-    
-    .about span {
-        font-size: 1.3rem;
-    }
-    
-    .skills h3 {
-        font-size: 1rem;
-    }
-    
-    .skills-icons ul {
-        font-size: 1.5rem;
-    }
+  .about span {
+    font-size: 1.3rem;
+  }
+
+  .skills h3 {
+    font-size: 1rem;
+  }
+
+  .skills-icons ul {
+    font-size: 1.5rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 548px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .border {
+    display: none;
+  }
 
-    .border {
-        display: none;
-    }
+  .initial-infos {
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .initial-infos {
-        width: 100vw;
-        justify-content: center;
-        align-items: center;
-    }
+  .initial h1 {
+    font-size: 3rem;
+  }
 
-    .initial h1 {
-        font-size: 3rem;
-    }
+  .initial h2 {
+    font-size: 1rem;
+  }
 
-    .initial h2 {
-        font-size: 1rem;
-    }
+  .icontacts i {
+    font-size: 1.9rem;
+  }
 
-    .icontacts i {
-        font-size: 1.9rem;
-    }
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .about p {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
 
-    .about p {
-        font-size: .8rem;
-        line-height: 25px;
-    }
-    
-    .about span {
-        font-size: 1.2rem;
-    }
+  .about span {
+    font-size: 1.2rem;
+  }
 
-    .skills p {
-        font-size: .8rem;
-    }
-
+  .skills p {
+    font-size: 0.8rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 435px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */  
+  .about p {
+    font-size: 0.6rem;
+  }
 
-    .about p {
-        font-size: .6rem;
-    }
-    
-    .about span {
-        font-size: 1rem;
-    }
+  .about span {
+    font-size: 1rem;
+  }
 
-    .skills p {
-        line-height: 21px;
-    }
+  .skills p {
+    line-height: 21px;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 410px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */  
-
-    .h1-initial-infos {
-        text-wrap: wrap;
-        text-align: center;
-    }
-
+  .h1-initial-infos {
+    text-wrap: wrap;
+    text-align: center;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 385px) {
+  /* ----------------------- MIDLE ----------------------- */
 
-    /* ----------------------- MIDLE ----------------------- */
+  .about p {
+    line-height: 17px;
+  }
 
-    .about p {
-        line-height: 17px;
-    }
+  .about p {
+    overflow: visible;
+  }
 
-    .about p {
-        overflow: visible;
-    }
+  #toggle {
+    display: none;
+  }
 
-    #toggle {
-        display: none;
-    }
+  .box-btn-ctt {
+    display: none;
+  }
 
-    .box-btn-ctt {
-        display: none;
-    }
+  .skills p,
+  .h3-softskills {
+    display: none;
+  }
 
-    .skills p, .h3-softskills {
-        display: none;
-    }
+  .box-skills {
+    justify-content: center;
+  }
 
-    .box-skills {
-        justify-content: center;
-    }
+  /* ----------------------- INFERIOR ----------------------- */
 
-    /* ----------------------- INFERIOR ----------------------- */
-
-    footer p {
-        font-size: .7rem;
-    }
+  footer p {
+    font-size: 0.7rem;
+  }
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width: 320px) {
+  /* ----------------------- SUPERIOR ----------------------- */
 
-    /* ----------------------- SUPERIOR ----------------------- */
+  .initial-infos span,
+  .initial-infos h2 {
+    display: none;
+  }
 
-    .initial-infos span,
-    .initial-infos h2 {
-        display: none;
-    }
-
-    .card {
-        width: auto;
-    }
-
+  .card {
+    width: auto;
+  }
 }

@@ -1,9 +1,9 @@
-const btnToTop = document.querySelector('.btn-top')
+const btnToTop = document.querySelector(".btn-top");
 
 function toTop(event) {
-    event.preventDefault()
-    window.scrollTo({top: 0, behavior: 'smooth'})
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-btnToTop.addEventListener('click', toTop)
-btnToTop.addEventListener('touchstart', toTop)
+btnToTop.addEventListener("click", toTop);
+btnToTop.addEventListener("touchstart", toTop);
