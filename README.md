@@ -25,7 +25,7 @@ https://srbaliardo.github.io/sitePortfolio
 
 <br>
 
-<img align="center" alt="HTML" height="400" width="500" src="./images/animation_sitePortfolio.gif">
+<img align="center" alt="HTML" height="400" width="600" src="./images/animation_sitePortfolio.gif">
 
 <br>
 
