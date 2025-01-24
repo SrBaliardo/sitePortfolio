@@ -474,6 +474,10 @@
     overflow: visible;
   }
 
+  .about p::after {
+    display: none;
+  }
+
   #toggle {
     display: none;
   }

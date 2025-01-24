@@ -1,26 +1,19 @@
 const textAbout = document.querySelector(".text-about");
 const textInitHeight = textAbout.clientHeight;
-const overflow = document.getElementById("overflow");
 const btnShowMore = document.getElementById("toggle");
 
 function toggle(event) {
   event.preventDefault();
-  textAbout.style.maxHeight =
-    event.target.dataset.state === "more"
-      ? `${textAbout.scrollHeight}px`
-      : `${textInitHeight}px`;
-  event.target.setAttribute(
-    "data-state",
-    event.target.dataset.state === "more" ? "less" : "more"
-  );
+  const isExpanded = event.target.dataset.state === "more";
 
-  event.target.innerHTML =
-    event.target.dataset.state === "more" ? "Ver mais..." : "...Ver menos";
+  textAbout.style.maxHeight = isExpanded
+    ? `${textAbout.scrollHeight}px`
+    : `${textInitHeight}px`;
 
-  overflow.setAttribute(
-    "data-state",
-    event.target.dataset.state === "more" ? "visible" : "hidden"
-  );
+  textAbout.classList.toggle("expanded", isExpanded);
+
+  event.target.setAttribute("data-state", isExpanded ? "less" : "more");
+  event.target.innerHTML = isExpanded ? "...Ver menos" : "Ler mais sobre...";
 }
 
 btnShowMore.addEventListener("click", toggle);
