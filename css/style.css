@@ -254,7 +254,6 @@ footer i:active,
   max-height: 260px;
   line-height: 37px;
   font-size: 1.5rem;
-  text-align: justify;
   transition: max-height 0.3s ease;
   overflow: hidden;
   position: relative;
