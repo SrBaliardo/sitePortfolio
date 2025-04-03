@@ -277,6 +277,11 @@
     font-size: 1.7rem;
   }
 
+  .btn-resume {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
   /* ----------------------- MIDLE ----------------------- */
 
   .sections h2 {

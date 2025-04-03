@@ -13,7 +13,7 @@ function getApiGutHub() {
       cardProject.innerHTML = `
                 <div class="card">
                     <div class="card-content">
-                        <img class="img-card" src="./images/animation_${item.name}.gif" draggable="false" onError="this.onerror=null;this.src='./images/code_working.gif';">
+                        <img class="img-card" src="./images/animation_${item.name}.gif" draggable="false" onError="if (this.src.includes('animation_')) { this.src='./images/${item.name}.png'; } else { this.onerror=null; this.src='./images/code_working.gif'; }">
                         <h5 class="title-project">${item.name}</h5>
                         <p class="desc-project">${item.description}</p>
                         <div class="btn-card">
