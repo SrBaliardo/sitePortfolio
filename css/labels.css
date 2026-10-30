@@ -1,142 +1,30 @@
-.linkedin-top,
-.github-top,
-.file-top,
-.linkedin,
-.github,
-.file,
-.envelope {
+.social-link {
   position: relative;
 }
-
-.linkedin:hover::after {
-  content: "LinkedIn";
+.social-link::after {
+  content: attr(aria-label);
   position: absolute;
-  bottom: 35px;
-  right: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  white-space: nowrap;
+  color: var(--text);
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  padding: 5px 9px;
   border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
+  font: 400 0.7rem/1.5 var(--body);
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+  z-index: 3;
 }
-
-.github:hover::after {
-  content: "Github";
-  position: absolute;
-  bottom: 35px;
-  right: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
-
-.file:hover::after {
-  content: "Curricúlo";
-  position: absolute;
-  bottom: 35px;
-  right: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
-
-.envelope:hover::after {
-  content: "Email";
-  position: absolute;
-  bottom: 35px;
-  right: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
-
-.linkedin-top:hover::after {
-  content: "LinkedIn";
-  position: absolute;
-  bottom: 45px;
-  left: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
-
-.github-top:hover::after {
-  content: "Github";
-  position: absolute;
-  bottom: 45px;
-  left: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
-}
-
-.file-top:hover::after {
-  content: "Curricúlo";
-  position: absolute;
-  bottom: 45px;
-  left: 27px;
-  transform: scale(1);
-  box-shadow: none;
-  text-shadow: none;
-  color: #5285f5;
-  font-size: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.75);
-  border: 0.5px solid #5285f5;
-  padding: 5px;
-  border-radius: 5px;
-  font-family: "Roboto";
-  letter-spacing: 0.5px;
-  font-weight: 900;
+.social-link:hover::after,
+.social-link:focus-visible::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
 }

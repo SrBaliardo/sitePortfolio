@@ -1,523 +1,332 @@
-@media screen and (max-width: 1180px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .btn-top {
-    font-size: 2.7rem;
-  }
-
-  .border {
-    width: 290px;
-    height: 290px;
-  }
-
-  .border::before {
-    inset: -10px 95px;
-  }
-
-  .initial h1 {
-    font-size: 3.7rem;
-  }
-
-  .initial h2 {
-    font-size: 1.5rem;
+@media (min-width: 1500px) {
+  .initial {
+    min-height: 780px;
   }
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 1035px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .skills h3 {
-    font-size: 1.4rem;
+@media (max-width: 1000px) {
+  .centralizer {
+    width: calc(100% - 56px);
   }
-
-  .skills p {
-    font-size: 1.2rem;
+  .site-header nav ul {
+    gap: 1.3rem;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 1010px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .btn-top {
-    font-size: 2.3rem;
+  .initial {
+    gap: 2rem;
   }
-
   .border {
-    width: 270px;
-    height: 270px;
+    width: 260px;
   }
-
-  .border::before {
-    inset: -10px 75px;
+  .about-layout {
+    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) 220px;
   }
-
-  .initial h1 {
-    font-size: 3.4rem;
+  .portrait-panel {
+    padding-inline: 12px;
   }
-
-  .initial h2 {
-    font-size: 1.4rem;
-  }
-
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 0.9rem;
-  }
-
-  .about span {
-    font-size: 1.3rem;
-  }
-
   .img-me {
-    width: 170px;
-    height: 170px;
+    width: 190px;
+    height: 210px;
   }
-
-  .skills h3 {
-    font-size: 1.4rem;
+  .featured-grid {
+    gap: 16px;
   }
-
-  .skills p {
-    font-size: 1.2rem;
+  .card-content {
+    padding: 20px;
   }
-
-  .skills-icons ul {
-    font-size: 2.7rem;
+  .box-cards {
+    grid-auto-columns: calc((100% - 22px) / 2);
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 970px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .skills h3 {
-    font-size: 1.3rem;
-  }
-
-  .skills p {
-    font-size: 1.1rem;
-  }
-
-  .skills-icons ul {
-    font-size: 2.5rem;
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 920px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .skills h3 {
-    font-size: 1.2rem;
+@media (max-width: 760px) {
+  .centralizer {
+    width: calc(100% - 40px);
   }
-
-  .skills p {
-    font-size: 1rem;
+  .site-header {
+    min-height: 88px;
   }
-
-  .skills-icons ul {
-    font-size: 2.3rem;
+  .logo {
+    width: 80px;
+    height: 80px;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 930px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 1rem;
+  .site-header nav a {
+    font-size: 0.75rem;
   }
-
-  .about span {
-    font-size: 1.5rem;
+  .site-header nav ul {
+    gap: 1rem;
   }
-
-  .img-me {
-    display: none;
+  .initial {
+    min-height: min(720px, calc(100svh - 88px));
+    gap: 20px;
+    padding-block: 48px 84px;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 830px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 1rem;
-  }
-
-  .about span {
-    font-size: 1.5rem;
-  }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 780px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .btn-top {
-    font-size: 2.1rem;
-  }
-
   .border {
-    width: 240px;
-    height: 240px;
+    width: 200px;
   }
-
-  .border::before {
-    inset: -10px 65px;
-  }
-
   .initial h1 {
-    font-size: 3.1rem;
+    font-size: clamp(2.35rem, 7vw, 3.4rem);
   }
-
-  .initial h2 {
-    font-size: 1.1rem;
+  .role {
+    font-size: 1rem;
   }
-
-  nav a {
-    font-size: 1.3rem;
+  .hero-description {
+    font-size: 1rem;
   }
-
-  .icontacts i {
-    font-size: 1.9rem;
+  .hero-actions .button {
+    padding-inline: 0.85rem;
+    font-size: 0.8rem;
   }
-
-  /* ----------------------- MIDLE ----------------------- */
-
-  .sections h2 {
-    font-size: 2.3rem;
+  .section {
+    padding-block: 72px;
   }
-
-  .skills-icons ul {
-    font-size: 2.1rem;
+  .about-layout {
+    grid-template-columns: minmax(0, 1fr) 180px;
+    gap: 28px;
   }
-
-  /* ----------------------- INFERIOR ----------------------- */
-
-  footer h2 {
-    font-size: 2.3rem;
+  .img-me {
+    width: 160px;
+    height: 180px;
   }
-
-  footer i {
-    font-size: 1.7rem;
+  .portrait-panel p {
+    font-size: 0.85rem;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 752px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  #toggle {
-    visibility: visible;
-  }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 735px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .skills-icons ul {
-    font-size: 1.9rem;
-  }
-
-  .skills-icons i span {
-    font-size: 0.9rem;
-  }
-
   .skills-stack {
-    flex-direction: column;
+    gap: 16px;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 695px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .btn-top {
-    font-size: 2rem;
+  .skill-panel {
+    padding: 22px;
   }
-
-  .border {
-    display: none;
+  .skills-icons {
+    grid-template-columns: 1fr;
   }
-
-  .initial-infos {
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
+  .additional-skills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .initial h1 {
-    font-size: 3rem;
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-
-  .initial h2 {
-    font-size: 1rem;
+  .featured-grid .project-card {
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
   }
-
-  nav a {
-    font-size: 1rem;
+  .featured-grid .project-preview {
+    aspect-ratio: auto;
+    min-height: 250px;
   }
-
-  .icontacts i {
-    font-size: 1.7rem;
-  }
-
-  .btn-resume {
-    width: 100px;
-    font-size: 0.9rem;
-  }
-
-  /* ----------------------- MIDLE ----------------------- */
-
-  .sections h2 {
-    font-size: 2.1rem;
-  }
-
-  /* ----------------------- INFERIOR ----------------------- */
-
-  footer h2 {
-    font-size: 2.1rem;
-  }
-
-  footer i {
-    font-size: 1.6rem;
-  }
-
-  footer i span,
-  .c,
-  p {
-    font-size: 0.9rem;
-  }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 640px) {
-  /* ----------------------- INFERIOR ----------------------- */
-
-  footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  footer i,
-  span {
-    font-size: 1.3rem;
-  }
-
-  footer p {
-    bottom: 0px;
+  .featured-grid .img-card {
     position: absolute;
-    text-align: center;
   }
-
-  .footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    padding: 25px;
+  .projects-heading {
+    align-items: start;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 617px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .skills p {
-    font-size: 0.9rem;
+  .projects-heading .text-link {
+    margin-top: 2.5rem;
   }
-
-  .box-contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
+  .footer-bottom {
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 50px;
   }
 }
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 570px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  nav ul {
-    display: none;
+@media (max-width: 560px) {
+  .site-header {
+    min-height: 84px;
   }
-
   .hamburger {
-    visibility: visible;
+    display: inline-grid;
   }
-
-  nav ul.active {
-    display: block;
-    gap: 5px;
-    top: 50px;
-    right: 70px;
+  .site-header nav {
+    margin-left: auto;
+  }
+  .site-header nav ul {
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 4px 14px;
+  }
+  .site-header nav a {
+    display: inline-block;
+    font-size: 0.7rem;
+    padding-block: 7px;
+  }
+  .site-header nav ul[data-enhanced] {
     position: absolute;
-    transition: 0.3s ease;
+    top: calc(100% - 2px);
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #121923fc;
+    box-shadow: 0 16px 30px #0005;
   }
-
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 0.9rem;
+  .site-header nav ul[data-enhanced].active {
+    display: flex;
   }
-
-  .about span {
-    font-size: 1.3rem;
+  .site-header nav ul[data-enhanced] a {
+    font-size: 0.85rem;
+    padding: 12px;
+    display: block;
   }
-
-  .skills h3 {
-    font-size: 1rem;
+  .initial {
+    grid-template-columns: 1fr;
+    padding-block: 50px 84px;
+    min-height: calc(100svh - 84px);
   }
-
-  .skills-icons ul {
-    font-size: 1.5rem;
+  .initial-infos {
+    text-align: center;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 548px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
+  .initial h1 {
+    font-size: clamp(2.3rem, 9vw, 3.2rem);
+    margin-top: 1rem;
+    letter-spacing: -0.04em;
+  }
+  .initial .eyebrow {
+    font-size: 0.65rem;
+  }
+  .role {
+    font-size: clamp(0.85rem, 3.6vw, 1.15rem);
+  }
+  .hero-description {
+    max-width: 340px;
+    margin-inline: auto;
+  }
+  .hero-actions,
+  .icontacts {
+    justify-content: center;
+  }
   .border {
     display: none;
   }
-
-  .initial-infos {
-    width: 100vw;
-    justify-content: center;
+  .scroll-cue {
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .section {
+    padding-block: 60px;
+  }
+  .section-heading {
+    margin-bottom: 32px;
+  }
+  .about-layout {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 28px;
+  }
+  .portrait-panel {
+    display: flex;
     align-items: center;
+    gap: 18px;
+    text-align: left;
+    padding: 12px 20px;
+    width: 100%;
   }
-
-  .initial h1 {
-    font-size: 3rem;
+  .img-me {
+    width: 85px;
+    height: 100px;
+    margin: 0;
   }
-
-  .initial h2 {
+  .about-copy p {
     font-size: 1rem;
   }
-
-  .icontacts i {
-    font-size: 1.9rem;
+  .skills-stack {
+    grid-template-columns: 1fr;
   }
-
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 0.8rem;
-    line-height: 25px;
+  .skills-icons {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .about span {
-    font-size: 1.2rem;
+  .additional-skills {
+    grid-template-columns: 1fr;
   }
-
-  .skills p {
-    font-size: 0.8rem;
+  .projects-heading {
+    display: block;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 435px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    font-size: 0.6rem;
+  .projects-heading .text-link {
+    margin-top: 18px;
   }
-
-  .about span {
-    font-size: 1rem;
+  .featured-grid .project-card {
+    display: flex;
   }
-
-  .skills p {
-    line-height: 21px;
+  .featured-grid .project-preview {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 410px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .h1-initial-infos {
-    text-wrap: wrap;
-    text-align: center;
+  .featured-grid .img-card {
+    position: static;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 385px) {
-  /* ----------------------- MIDLE ----------------------- */
-
-  .about p {
-    line-height: 17px;
+  .card-content {
+    padding: 24px;
   }
-
-  .about p {
-    overflow: visible;
+  .explore-projects {
+    margin-top: 44px;
   }
-
-  .about p::after {
-    display: none;
+  .explore-heading {
+    flex-wrap: wrap;
+    gap: 16px;
   }
-
-  #toggle {
-    display: none;
+  .explore-heading h3 {
+    font-size: 1.15rem;
   }
-
-  .box-btn-ctt {
-    display: none;
+  .carousel-controls {
+    margin-left: auto;
   }
-
-  .skills p,
-  .h3-softskills {
-    display: none;
+  .project-filters {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
   }
-
-  .box-skills {
-    justify-content: center;
+  .box-cards {
+    grid-auto-columns: min(86%, 340px);
+    gap: 16px;
+    scroll-padding-inline: 2px;
   }
-
-  /* ----------------------- INFERIOR ----------------------- */
-
-  footer p {
+  .contact-grid {
+    gap: 12px;
+  }
+  .contact-card {
+    padding: 22px 16px;
+  }
+  .contact-card span {
     font-size: 0.7rem;
   }
-}
-
-/* /////////////////////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width: 320px) {
-  /* ----------------------- SUPERIOR ----------------------- */
-
-  .initial-infos span,
-  .initial-infos h2 {
-    display: none;
+  .contact-card .contact-cta {
+    font-size: 0.7rem;
   }
-
-  .card {
-    width: auto;
+  .btn-top {
+    width: 42px;
+    height: 42px;
+    right: 14px;
+    bottom: 14px;
+  }
+  .resume-box {
+    padding: 16px;
+  }
+  .resume-heading h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .centralizer {
+    width: calc(100% - 32px);
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .skills-icons {
+    gap: 12px;
+  }
+  .skills-icons li {
+    font-size: 0.875rem;
+    gap: 10px;
+  }
+  .hero-actions {
+    flex-direction: column;
   }
 }

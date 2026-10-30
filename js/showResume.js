@@ -1,26 +1,49 @@
-const resumeBox = document.querySelector(".resume-box");
-const resumeBg = document.querySelector(".resume-bg");
+(() => {
+  const dialog = document.getElementById("resume-dialog");
+  const closeButton = document.getElementById("close-resume");
+  let trigger;
 
-function viewResume() {
-  resumeBox.style.left = "50%";
-  resumeBox.style.transform = "translateX(-50%)";
-  resumeBg.style.visibility = "visible";
+  document.querySelectorAll("[data-resume]").forEach((link) => {
+    link.addEventListener("click", (event) => {
+      if (
+        typeof dialog.showModal !== "function" ||
+        event.ctrlKey ||
+        event.metaKey ||
+        event.shiftKey ||
+        event.altKey
+      )
+        return;
+      event.preventDefault();
+      trigger = link;
 
-  if (!document.querySelector(".resume-pdf")) {
-    const iframe = document.createElement("iframe");
-    iframe.src = "./resume.pdf";
-    iframe.className = "resume-pdf";
-    iframe.style.width = "100%";
-    iframe.style.height = "550px";
-    resumeBox.appendChild(iframe);
-  }
-}
+      const iframe = document.createElement("iframe");
+      iframe.className = "resume-pdf";
+      iframe.title = "Currículo de John Baliardo em PDF";
+      iframe.src = "./resume.pdf";
+      dialog.append(iframe);
+      dialog.showModal();
+      document.body.classList.add("modal-open");
+      closeButton.focus();
+    });
+  });
 
-function hiddenResume() {
-  resumeBox.style.left = "-100%";
-  resumeBg.style.visibility = "hidden";
-  const iframe = document.querySelector(".resume-pdf");
-  if (iframe) {
-    iframe.remove();
-  }
-}
+  closeButton.addEventListener("click", () => dialog.close());
+
+  dialog.addEventListener("click", (event) => {
+    if (event.target !== dialog) return;
+    const bounds = dialog.getBoundingClientRect();
+    if (
+      event.clientX < bounds.left ||
+      event.clientX > bounds.right ||
+      event.clientY < bounds.top ||
+      event.clientY > bounds.bottom
+    )
+      dialog.close();
+  });
+
+  dialog.addEventListener("close", () => {
+    dialog.querySelector(".resume-pdf")?.remove();
+    document.body.classList.remove("modal-open");
+    trigger?.focus({ preventScroll: true });
+  });
+})();

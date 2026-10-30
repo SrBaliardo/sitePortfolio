@@ -1,72 +1,185 @@
-const carouselBox = document.querySelector(".box-project");
-const carousel = document.querySelector(".box-cards");
-const btnPrevNext = document.querySelectorAll(".btn-nav");
-const firstCardWidth = 320;
+(() => {
+  const carousel = document.getElementById("project-list");
+  const controls = document.querySelector(".carousel-controls");
+  const previous = document.getElementById("left");
+  const next = document.getElementById("right");
+  const play = document.getElementById("autoplay");
+  const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  let automatic = false;
+  let visible = false;
+  let hovered = false;
+  let timer;
+  let drag;
+  let suppressClick = false;
 
-let draggingOn = false,
-  startX,
-  startScrollLeft;
+  function step(direction) {
+    const cards = carousel.querySelectorAll(".project-card");
+    if (cards.length < 2) return;
+    const distance = cards[1].offsetLeft - cards[0].offsetLeft;
+    const maximum = carousel.scrollWidth - carousel.clientWidth;
+    const current = carousel.scrollLeft;
+    const target =
+      direction > 0
+        ? current >= maximum - 3
+          ? 0
+          : Math.min(maximum, current + distance)
+        : current <= 3
+          ? maximum
+          : Math.max(0, current - distance);
+    carousel.scrollTo({
+      left: target,
+      behavior: motion.matches ? "instant" : "smooth",
+    });
+  }
 
-function slideCard(direction) {
-  carousel.style.scrollBehavior = "smooth";
-
-  if (direction === "right") {
+  function synchronize() {
+    window.clearInterval(timer);
+    play.disabled = motion.matches;
+    play.setAttribute("aria-pressed", String(automatic));
+    play.setAttribute(
+      "aria-label",
+      motion.matches
+        ? "Reprodução automática desativada: movimento reduzido"
+        : automatic
+          ? "Pausar reprodução automática"
+          : "Ativar reprodução automática",
+    );
+    play
+      .querySelector("use")
+      .setAttribute("href", automatic ? "#icon-pause" : "#icon-play");
     if (
-      carousel.scrollLeft + firstCardWidth >=
-      carousel.scrollWidth - carousel.clientWidth
+      automatic &&
+      visible &&
+      !hovered &&
+      !document.hidden &&
+      !motion.matches &&
+      !carousel.contains(document.activeElement) &&
+      !drag
     ) {
-      carousel.scrollLeft = 0;
-    } else {
-      carousel.scrollLeft += firstCardWidth;
-    }
-  } else if (direction === "left") {
-    if (carousel.scrollLeft - firstCardWidth < 0) {
-      carousel.scrollLeft = carousel.scrollWidth - carousel.clientWidth;
-    } else {
-      carousel.scrollLeft -= firstCardWidth;
+      timer = window.setInterval(() => step(1), 5000);
     }
   }
-}
 
-btnPrevNext.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    slideCard(btn.id === "left" ? "left" : "right");
+  function stopAutomatic() {
+    automatic = false;
+    synchronize();
+  }
+
+  function updateControls() {
+    const scrollable =
+      !carousel.hidden && carousel.scrollWidth > carousel.clientWidth + 3;
+    previous.disabled = !scrollable;
+    next.disabled = !scrollable;
+    play.hidden = !scrollable;
+    stopAutomatic();
+  }
+
+  controls.hidden = false;
+  previous.addEventListener("click", () => {
+    stopAutomatic();
+    step(-1);
   });
-});
+  next.addEventListener("click", () => {
+    stopAutomatic();
+    step(1);
+  });
+  play.addEventListener("click", () => {
+    automatic = !automatic;
+    synchronize();
+  });
 
-const dragStart = (event) => {
-  draggingOn = true;
-  startX = event.pageX;
-  startScrollLeft = carousel.scrollLeft;
+  carousel.addEventListener("keydown", (event) => {
+    if (
+      event.target !== carousel ||
+      !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)
+    )
+      return;
+    event.preventDefault();
+    stopAutomatic();
+    if (event.key === "Home")
+      carousel.scrollTo({
+        left: 0,
+        behavior: motion.matches ? "instant" : "smooth",
+      });
+    else if (event.key === "End")
+      carousel.scrollTo({
+        left: carousel.scrollWidth,
+        behavior: motion.matches ? "instant" : "smooth",
+      });
+    else step(event.key === "ArrowRight" ? 1 : -1);
+  });
 
-  carousel.style.scrollBehavior = "auto";
-};
+  carousel.addEventListener("pointerdown", (event) => {
+    if (
+      event.pointerType !== "mouse" ||
+      event.button !== 0 ||
+      event.target.closest("a, button")
+    )
+      return;
+    stopAutomatic();
+    suppressClick = false;
+    drag = {
+      id: event.pointerId,
+      start: event.clientX,
+      scroll: carousel.scrollLeft,
+    };
+    carousel.setPointerCapture(event.pointerId);
+  });
 
-const dragging = (event) => {
-  if (!draggingOn) return;
-  carousel.scrollLeft = startScrollLeft - (event.pageX - startX);
-};
+  carousel.addEventListener("pointermove", (event) => {
+    if (!drag || event.pointerId !== drag.id) return;
+    const distance = event.clientX - drag.start;
+    if (Math.abs(distance) < 6 && !suppressClick) return;
+    suppressClick = true;
+    carousel.classList.add("dragging");
+    carousel.scrollLeft = drag.scroll - distance;
+  });
 
-const dragStop = () => {
-  draggingOn = false;
+  function finishDrag() {
+    if (!drag) return;
+    drag = null;
+    carousel.classList.remove("dragging");
+    synchronize();
+  }
 
-  carousel.style.scrollBehavior = "smooth";
-};
+  carousel.addEventListener("pointerup", finishDrag);
+  carousel.addEventListener("pointercancel", finishDrag);
+  carousel.addEventListener("lostpointercapture", finishDrag);
+  carousel.addEventListener(
+    "click",
+    (event) => {
+      if (!suppressClick) return;
+      event.preventDefault();
+      event.stopPropagation();
+      suppressClick = false;
+    },
+    true,
+  );
 
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
+  carousel.addEventListener("mouseenter", () => {
+    hovered = true;
+    synchronize();
+  });
+  carousel.addEventListener("mouseleave", () => {
+    hovered = false;
+    synchronize();
+  });
+  carousel.addEventListener("focusin", synchronize);
+  carousel.addEventListener("focusout", () =>
+    window.setTimeout(synchronize, 0),
+  );
+  carousel.addEventListener("projectsupdated", updateControls);
+  document.addEventListener("visibilitychange", synchronize);
+  motion.addEventListener("change", stopAutomatic);
 
-let autoSlideInterval = setInterval(() => {
-  slideCard("right");
-}, 1800);
-
-carouselBox.addEventListener("mouseenter", () => {
-  clearInterval(autoSlideInterval);
-});
-
-carouselBox.addEventListener("mouseleave", () => {
-  autoSlideInterval = setInterval(() => {
-    slideCard("right");
-  }, 1800);
-});
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      visible = entry.isIntersecting;
+      synchronize();
+    },
+    { threshold: 0.2 },
+  );
+  observer.observe(carousel);
+  new ResizeObserver(updateControls).observe(carousel);
+  updateControls();
+})();

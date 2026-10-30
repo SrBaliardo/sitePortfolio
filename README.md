@@ -1,34 +1,75 @@
-# "Como está meu desenvolvimento?"
+# John Baliardo · JHAB Dev
 
-Essa página foi desenvolvida especialmente para essa análise.
+**Versão atual: 2.0.0**
 
-Propositalmente estruturada com a trindade (HTML-CSS-JavaScript) para aprendizado e aprimoramento dessa base.
+Portfólio construído propositalmente com **HTML, CSS e JavaScript puros**, como registro da minha evolução e demonstração dos fundamentos do desenvolvimento Front End. A base continua a mesma, mesmo com minha atuação também em React.
 
-Mais tarde me aprimorei no Front end e hoje desenvolvo utilizando React, mas o aprendizado é contínuo e constante.
+O projeto preserva a identidade original: fundo tecnológico, paleta azul, verde e roxo, logo JHAB Dev, ilustrações e interações próprias.
 
-Essa página ficará para sempre com essa estrutura para que me lembre sempre de como foi.
+[Acessar o portfólio publicado](https://srbaliardo.github.io/sitePortfolio/)
 
-<br>
+## Evolução do projeto
 
-# "How is my development?"
+As duas versões usam HTML, CSS e JavaScript puros. As tags preservam o código e os arquivos de cada etapa, sem duplicar o site em pastas na versão atual.
 
-This page was developed especially for this analysis.
+| Versão | O que representa                                                                                              | Código                                                                           |
+| ------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| 1.0.0  | Portfólio original: identidade visual, interações e primeiras soluções com a base da web.                     | [Explorar a versão 1.0](https://github.com/SrBaliardo/sitePortfolio/tree/v1.0.0) |
+| 2.0.0  | Evolução da apresentação profissional, acessibilidade, responsividade, desempenho e organização dos projetos. | [Explorar a versão 2.0](https://github.com/SrBaliardo/sitePortfolio/tree/v2.0.0) |
 
-It was purposely structured with the trinity (HTML-CSS-JavaScript) to learn and improve this foundation.
+[Comparar as alterações entre 1.0 e 2.0](https://github.com/SrBaliardo/sitePortfolio/compare/v1.0.0...v2.0.0) · [Histórico das versões](CHANGELOG.md)
 
-I later improved my front-end skills and today I develop using React, but learning is continuous and constant.
+| Versão 1.0                                                            | Versão 2.0                                                    |
+| --------------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Apresentação original do portfólio](docs/evolution/v1-desktop.webp) | ![Apresentação atual do portfólio](images/social-preview.jpg) |
 
-This page will always have this structure so that I can always remember what it was like.
+## Executar localmente
 
-You can view the project via the link: <br>
-https://srbaliardo.github.io/sitePortfolio
+Abra a pasta com o Live Server do VS Code ou inicie um servidor estático. Não há instalação de dependências, framework ou etapa de build para executar o site.
 
-<br>
+```powershell
+python -m http.server 5500 --bind 127.0.0.1
+```
 
-<img align="center" alt="HTML" height="auto" width="500" src="./images/animation_sitePortfolio.gif">
+Depois, acesse `http://127.0.0.1:5500`.
 
-<br>
+## Estrutura
 
-" <img align="center" alt="HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"> |
-<img align="center" alt="CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"> |
-<img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> "
+- `index.html`: conteúdo, navegação, projetos disponíveis sem JavaScript e ícones SVG.
+- `css/`: estilos, variáveis de identidade visual, tipografia local e adaptações de tela.
+- `js/`: scripts separados por função, incluindo carrossel, menu, currículo, busca e integração com o GitHub.
+- `js/projectsData.js`: seleção local para manter os projetos disponíveis sem conexão com o GitHub.
+- `images/`: foto de perfil, identidade visual, imagem de compartilhamento e prévias WebP dos projetos. Somente os arquivos utilizados permanecem na versão atual.
+- `docs/evolution/`: registro visual da versão original para comparação.
+- `fonts/`: fontes Gugi e Roboto e suas licenças OFL.
+- `resume.pdf`: currículo, com abertura direta, visualização em diálogo e download.
+
+## Projetos e disponibilidade
+
+Três projetos recebem destaque na página. Os demais podem ser explorados no carrossel, pela busca ou pelo filtro de linguagem principal. O botão de demonstração só é exibido quando existe um endereço cadastrado.
+
+O catálogo consulta os repositórios públicos do GitHub com paginação e mantém um cache por 30 minutos. Se a conexão ou a API falhar, a seleção local continua disponível. Sem JavaScript, o HTML mantém os projetos, a apresentação completa, a navegação e o acesso ao currículo.
+
+Para alterar os destaques, atualize os cards de `.featured-grid` no HTML e a lista `featured` em `js/projectsData.js`. A seleção local é uma fotografia dos projetos: para atualizar também a alternativa sem JavaScript, mantenha os cards do HTML e os dados locais em sincronia.
+
+## Acessibilidade e movimento
+
+Os controles utilizam elementos nativos, nomes acessíveis e foco visível. O menu pode ser fechado com Esc, assim como o currículo, que devolve o foco ao elemento de origem. A reprodução automática do carrossel é opcional, pausa durante a interação e respeita a preferência por movimento reduzido.
+
+## Backup da revisão
+
+A versão anterior está preservada na tag `v1.0.0`, com todos os seus arquivos. Os GIFs, imagens antigas e outros recursos substituídos podem ser consultados nessa versão, mesmo após sua remoção da pasta atual.
+
+O ZIP original verificado também permanece em `.backups/`, com os arquivos e o histórico Git anteriores à revisão. Ele é uma cópia local de segurança e não é enviado ao GitHub. Para instruções de restauração, consulte `.backups/RESTAURAR.md`.
+
+Para comparar o código localmente:
+
+```powershell
+git diff v1.0.0 v2.0.0 -- index.html css js
+```
+
+Para consultar a versão antiga, use a tag no GitHub ou faça um clone separado. Assim, os arquivos da versão atual continuam disponíveis na pasta de trabalho.
+
+## About this project
+
+This portfolio intentionally uses plain HTML, CSS and JavaScript to demonstrate and preserve my front-end foundations. It keeps its original visual identity while improving readability, accessibility, project discovery and loading performance. No framework or build step is required.

@@ -1,292 +1,2137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta
+      name="description"
+      content="Portfólio de John Baliardo, desenvolvedor Front End. Conheça meus projetos, habilidades e soluções web com foco em interfaces intuitivas e eficientes."
+    />
+    <meta name="theme-color" content="#0d1117" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:title"
+      content="John Baliardo | Desenvolvedor Front End"
+    />
+    <meta
+      property="og:description"
+      content="Interfaces intuitivas, projetos com personalidade e desenvolvimento web. Conheça meu trabalho."
+    />
+    <meta
+      property="og:url"
+      content="https://srbaliardo.github.io/sitePortfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://srbaliardo.github.io/sitePortfolio/images/social-preview.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="John Baliardo, desenvolvedor Front End"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://srbaliardo.github.io/sitePortfolio/" />
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="preload"
+      href="./fonts/gugi-400-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/labels.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
-
-    <title>Portfólio John</title>
+    <title>John Baliardo | Desenvolvedor Front End</title>
+    <script src="./js/projectsData.js" defer></script>
+    <script src="./js/typeFunction.js" defer></script>
+    <script src="./js/btnTop.js" defer></script>
+    <script src="./js/btnClickSplash.js" defer></script>
+    <script src="./js/btnReadMore.js" defer></script>
+    <script src="./js/showActive.js" defer></script>
+    <script src="./js/getApi.js" defer></script>
+    <script src="./js/carouselSlide.js" defer></script>
+    <script src="./js/showResume.js" defer></script>
   </head>
-  <body class="centralizer">
-    <div class="index-box">
-      <header id="top">
-        <img
-          class="logo"
-          src="./images/logo_jhab-dev.png"
-          alt="logo_jhab-dev"
-        />
-        <i class="fas fa-hamburger hamburger"></i>
-
-        <nav>
-          <ul>
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="0"
+      height="0"
+      style="position: absolute"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-down" viewBox="0 0 24 24">
+          <path d="M12 4v16m-6-6 6 6 6-6" />
+        </symbol>
+        <symbol id="icon-up" viewBox="0 0 24 24">
+          <path d="M12 20V4m-6 6 6-6 6 6" />
+        </symbol>
+        <symbol id="icon-chevron" viewBox="0 0 24 24">
+          <path d="m6 9 6 6 6-6" />
+        </symbol>
+        <symbol id="icon-left" viewBox="0 0 24 24">
+          <path d="m15 6-6 6 6 6" />
+        </symbol>
+        <symbol id="icon-right" viewBox="0 0 24 24">
+          <path d="m9 6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24">
+          <path
+            d="M14 4h6v6m0-6L10 14m0-10H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5"
+          />
+        </symbol>
+        <symbol id="icon-code" viewBox="0 0 24 24">
+          <path d="m7 7-5 5 5 5m10-10 5 5-5 5M14 4l-4 16" />
+        </symbol>
+        <symbol id="icon-file" viewBox="0 0 24 24">
+          <path d="M14 2H5v20h14V7zm0 0v6h5M8 12h8m-8 4h8" />
+        </symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="m3 6 9 7 9-7" />
+        </symbol>
+        <symbol id="icon-message" viewBox="0 0 24 24">
+          <path d="M21 11.5a9 9 0 0 1-13.5 8L3 21l1.5-4.5A9 9 0 1 1 21 11.5Z" />
+          <path d="M8 8c0 4 4 8 8 8l1-2-3-1-1 1-3-3 1-1-1-3Z" />
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24">
+          <path d="m8 5 11 7-11 7Z" />
+        </symbol>
+        <symbol id="icon-pause" viewBox="0 0 24 24">
+          <path d="M8 5v14M16 5v14" />
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 24 24">
+          <path
+            d="M5.4 7.5a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2ZM3.6 9h3.6v12H3.6Zm5.8 0h3.4v1.6h.1c.5-1 1.7-2 3.5-2 3.8 0 4.5 2.4 4.5 5.5V21h-3.6v-6.1c0-1.5 0-3.3-2-3.3s-2.3 1.6-2.3 3.2V21H9.4Z"
+          />
+        </symbol>
+        <symbol id="icon-github" viewBox="0 0 24 24">
+          <path
+            d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.64-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.6 9.6 0 0 1 12 6.99c.85 0 1.7.11 2.5.34 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.58 4.94.36.31.68.92.68 1.85v2.58c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"
+          />
+        </symbol>
+      </defs>
+    </svg>
+    <div class="centralizer">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="John Baliardo, início"
+          ><img
+            class="logo"
+            src="./images/logo_jhab-dev.webp"
+            alt="JHAB Dev"
+            width="100"
+            height="100"
+        /></a>
+        <nav aria-label="Navegação principal">
+          <ul id="navigation">
             <li><a href="#about">Sobre mim</a></li>
             <li><a href="#skills">Habilidades</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contatos</a></li>
           </ul>
         </nav>
+        <button
+          class="hamburger icon-button"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+          hidden
+        >
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-menu"></use>
+          </svg>
+        </button>
       </header>
-
-      <div class="initial">
-        <div class="initial-infos">
-          <h1 class="h1-initial-infos">John Baliardo</h1>
-          <h2>
-            <span>< </span>Desenvolvedor <span class="function"></span
-            ><span> ></span>
-          </h2>
-          <ul class="icontacts">
-            <a href="https://www.linkedin.com/in/john-baliardo" target="_blank">
-              <i class="fab fa-linkedin-in linkedin-top"></i>
-            </a>
-
-            <a href="https://github.com/SrBaliardo" target="_blank">
-              <i class="fab fa-github github-top"></i>
-            </a>
-
-            <a onclick="viewResume()">
-              <i class="fas fa-file-alt file-top"></i>
-            </a>
-          </ul>
-        </div>
-        <div class="border">
-          <div class="border-content">
-            <img src="./images/code_typing-bro2.png" alt="typing_code" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="far fa-arrow-alt-circle-up btn-top"></button>
-
-    <main>
-      <div class="sections">
-        <section class="about" id="about">
-          <h2>Sobre mim</h2>
-          <div class="box-about">
-            <p class="text-about">
-              <span><i class="fas fa-quote-left"></i> </span>Olá, sou o John
-              Baliardo.
-              <br />
-              Atualmente, trabalho como freelancer no desenvolvimento Front End
-              de aplicações web, com foco em interfaces intuitivas e eficientes.
-              <br />
-              Tenho um forte histórico em tecnologia, começando desde cedo com
-              edições de imagens, design gráfico e desenvolvimento de sites.
-              Além disso, atuei como instrutor de informática, ensinando desde o
-              básico até desenvolvimento web.
-              <br />
-              Minha stack principal é Front End, utilizando React.js, JavaScript
-              e Styled-Components/CSS. Também sou familiar com TailwindCSS,
-              Typescript, Bootstrap, API/API Rest, UX/UI.
-              <br />
-              Possuo formação em Full Stack para expandir minha expertise e
-              desenvolver soluções ponta a ponta, utilizo Node.js no Back End
-              com MongoDB/PostgreSQL. Além do desenvolvimento web, possuo
-              conhecimentos em análise de dados e dashboards com Python e Power
-              BI.
-              <br />
-              Soft skills: Sou altamente comprometido com a entrega de qualidade
-              dentro dos prazos estabelecidos e em encontrar maneiras eficientes
-              de resolver problemas. Valorizo uma comunicação clara e um
-              planejamento estratégico.
-              <br />
-              Vamos nos comunicar.<span>
-                <i class="fas fa-quote-right"></i></span
-              ><span id="overflow" data-state="visible"></span>
-            </p>
-            <img
-              class="img-me"
-              src="./images/suitJohn-removebg.png"
-              alt="eu_cartoon"
-            />
-          </div>
-
-          <button id="toggle" data-state="more">Ler mais sobre...</button>
-
-          <div class="box-btn-ctt">
-            <button class="btn-ctt show-sect">Ver contatos</button>
-            <ul class="sect-ctt">
-              <span id="bracket-l">[</span>
-              <a
-                href="https://www.linkedin.com/in/john-baliardo"
-                target="_blank"
+      <main id="main" tabindex="-1">
+        <section class="initial" aria-labelledby="hero-title">
+          <div class="initial-infos">
+            <p class="eyebrow">Criatividade &amp; desenvolvimento web</p>
+            <h1 id="hero-title">John Baliardo</h1>
+            <p class="role">
+              <span class="visually-hidden">Desenvolvedor Front End</span
+              ><span aria-hidden="true"
+                ><span class="code-bracket">&lt;</span> Desenvolvedor
+                <span class="function">Front End</span
+                ><span class="typing-cursor"></span>
+                <span class="code-bracket">&gt;</span></span
               >
-                <i class="fab fa-linkedin-in linkedin"></i>
-              </a>
-
-              <a href="https://github.com/SrBaliardo" target="_blank">
-                <i class="fab fa-github github"></i>
-              </a>
-
-              <a href="mailto:srbaliardo@gmail.com" target="_blank">
-                <i class="fas fa-envelope envelope"></i>
-              </a>
-
-              <a onclick="viewResume()">
-                <i class="fas fa-file-alt file"></i>
-              </a>
-              <span id="bracket-r">]</span>
-            </ul>
-
-            <a href="https://wa.me/5516996402765" target="_blank">
-              <button class="btn-ctt">Mensagem direta</button>
-            </a>
-
-            <!-- <button class="btn-resume-about btn-contact" onclick="viewResume()">
-              Currículo
-            </button> -->
+            </p>
+            <p class="hero-description">
+              Transformo ideias em interfaces intuitivas, eficientes e com
+              personalidade.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"
+                >Conheça meus projetos
+                <svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-arrow"></use></svg></a
+              ><a class="button" href="#contact">Vamos conversar</a>
+            </div>
+            <div class="icontacts" aria-label="Perfis e currículo">
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/john-baliardo"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  class="icon icon-brand"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-linkedin"></use></svg></a
+              ><a
+                class="social-link"
+                href="https://github.com/SrBaliardo"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><svg
+                  class="icon icon-brand"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-github"></use></svg></a
+              ><a
+                class="social-link"
+                href="./resume.pdf"
+                data-resume
+                aria-label="Ver currículo"
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-file"></use></svg
+              ></a>
+            </div>
           </div>
+          <div class="border" aria-hidden="true">
+            <div class="border-content">
+              <img
+                src="./images/code_typing-bro2.webp"
+                alt=""
+                width="600"
+                height="600"
+                fetchpriority="high"
+              />
+            </div>
+          </div>
+          <a class="scroll-cue" href="#about"
+            ><svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-down"></use>
+            </svg>
+            Um pouco sobre mim</a
+          >
         </section>
-
-        <section class="skills" id="skills">
-          <h2>Habilidades</h2>
-          <div class="box-skills">
-            <div class="skills-stack">
-              <div class="skills-block-1">
-                <h3>Meu stack principal no Front end</h3>
-                <div class="skills-icons">
-                  <ul>
-                    <i class="devicon-react-original"><span> React</span></i>
-                    <i class="devicon-javascript-plain"
-                      ><span> JavaScript</span></i
-                    >
-                    <i class="devicon-html5-plain"><span> HTML</span></i>
-                    <i class="devicon-css3-plain"><span> CSS</span></i>
-                  </ul>
-                </div>
+        <section class="section about" id="about" aria-labelledby="about-title">
+          <div class="section-heading">
+            <p class="eyebrow">Quem está por trás do código</p>
+            <h2 id="about-title">Sobre mim</h2>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy">
+              <p>
+                <strong>Olá, sou o John Baliardo.</strong> Sou
+                <strong>líder de front-end na SIFAT</strong>, onde trabalho no
+                desenvolvimento de um ERP, principalmente com React, e na gestão
+                do time de desenvolvedores front-end, incluindo a atuação de
+                profissionais full stack nessa frente.
+              </p>
+              <p>
+                Atuo no desenvolvimento desde janeiro de 2023 e também realizo
+                projetos pontuais, com experiência em sistemas ERP e outras
+                aplicações web.
+              </p>
+              <div class="about-details" id="about-details">
+                <p>
+                  Minha trajetória começou entre design gráfico, edição de
+                  imagens e criação de sites, passando também pelo ensino de
+                  informática e desenvolvimento web. Essa experiência acompanha
+                  meu cuidado com interfaces intuitivas e com a experiência de
+                  quem usa.
+                </p>
+                <p>
+                  Minha stack principal é
+                  <strong>React, JavaScript e Styled-Components/CSS</strong>.
+                  Também tenho familiaridade com Tailwind CSS, TypeScript,
+                  APIs REST e UX/UI. Tenho formação em Full Stack e
+                  utilizo Node.js no Back End com MongoDB, PostgreSQL e SQLite,
+                  além de Electron.js no desenvolvimento de aplicações desktop.
+                </p>
+                <p>
+                  Valorizo comunicação clara, objetividade e planejamento,
+                  tanto na construção das soluções quanto na colaboração com o
+                  time, com compromisso com a qualidade e os prazos de cada
+                  entrega.
+                </p>
               </div>
-
-              <div class="skills-block-2">
-                <h3>Familiaridade com tecnologias</h3>
-                <div class="skills-icons">
-                  <ul class="">
-                    <i class="fab fa-node-js"><span> Node</span></i>
-                    <i class="devicon-typescript-plain"
-                      ><span> TypeScript</span></i
-                    >
-                    <i class="devicon-tailwindcss-original"
-                      ><span> Tailwind</span></i
-                    >
-                    <i class="devicon-bootstrap-plain"
-                      ><span> Bootstrap</span></i
-                    >
-                  </ul>
+              <button
+                class="read-more"
+                id="toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="about-details"
+                hidden
+              >
+                <span>Ver menos</span
+                ><svg class="icon" aria-hidden="true" focusable="false">
+                  <use href="#icon-chevron"></use>
+                </svg>
+              </button>
+              <div class="box-btn-ctt">
+                <div class="contacts-disclosure">
+                  <button
+                    class="button show-sect"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="about-contacts"
+                    hidden
+                  >
+                    Ver contatos
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-chevron"></use>
+                    </svg>
+                  </button>
+                  <div class="sect-ctt" id="about-contacts">
+                    <a
+                      class="social-link"
+                      href="https://www.linkedin.com/in/john-baliardo"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        class="icon icon-brand"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use href="#icon-linkedin"></use></svg></a
+                    ><a
+                      class="social-link"
+                      href="https://github.com/SrBaliardo"
+                      aria-label="GitHub"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg
+                        class="icon icon-brand"
+                        aria-hidden="true"
+                        focusable="false"
+                      >
+                        <use href="#icon-github"></use></svg></a
+                    ><a
+                      class="social-link"
+                      href="./resume.pdf"
+                      data-resume
+                      aria-label="Ver currículo"
+                      ><svg class="icon" aria-hidden="true" focusable="false">
+                        <use href="#icon-file"></use></svg></a
+                    ><a
+                      class="social-link"
+                      href="mailto:srbaliardo@gmail.com"
+                      aria-label="E-mail"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><svg class="icon" aria-hidden="true" focusable="false">
+                        <use href="#icon-mail"></use></svg
+                    ></a>
+                  </div>
                 </div>
+                <a
+                  class="button"
+                  href="https://wa.me/5516996402765"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-message"></use>
+                  </svg>
+                  Mensagem direta</a
+                >
               </div>
             </div>
-
-            <div class="skills-block-3">
-              <h3 class="h3-softskills">
-                Conhecimentos adicionais e softskills
-              </h3>
+            <div class="portrait-panel">
+              <img
+                class="img-me"
+                src="./images/perfilJohn.jpg"
+                alt="Foto de John Baliardo"
+                width="220"
+                height="240"
+                loading="lazy"
+                decoding="async"
+              />
               <div>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Conhecimento das práticas
-                  de controle de versões (GIT e GitHub).
-                </p>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Familiaridade com
-                  arquitetura API/API Rest.
-                </p>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Conhecimento em bancos
-                  MongoDB, PostgreSQL, MySQL.
-                </p>
-                <p><i class="fas fa-puzzle-piece"></i> Experiência em UX/UI.</p>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Experiência no tratamento
-                  e criação de imagens.
-                </p>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Análise de Dados e
-                  dashboards com Python e Power BI.
-                </p>
-                <p>
-                  <i class="fas fa-puzzle-piece"></i> Planejamento e Resolução
-                  de Problemas são meu PLUS!
-                </p>
+                <p>Design encontra código.</p>
+                <span>Interfaces pensadas para quem usa.</span>
               </div>
             </div>
           </div>
         </section>
-
-        <section class="project" id="projects">
-          <h2>Projetos</h2>
-          <div class="box-project">
-            <button
-              class="btn-nav btn-prev fas fa-chevron-left"
-              id="left"
-            ></button>
-            <button
-              class="btn-nav btn-next fas fa-chevron-right"
-              id="right"
-            ></button>
-            <div class="box-cards">
-              <!-- getAPI (GitHub) -->
+        <section
+          class="section skills"
+          id="skills"
+          aria-labelledby="skills-title"
+        >
+          <div class="section-heading">
+            <p class="eyebrow">Ferramentas para construir</p>
+            <h2 id="skills-title">Habilidades</h2>
+            <p>
+              Uma base sólida, curiosidade para aprender e atenção à experiência
+              de quem usa.
+            </p>
+          </div>
+          <div class="skills-stack">
+            <div class="skill-panel">
+              <p class="panel-label">No dia a dia</p>
+              <h3>Minha stack principal</h3>
+              <ul class="skills-icons">
+                <li>
+                  <span class="tech-icon react" aria-hidden="true">⚛</span>React
+                </li>
+                <li>
+                  <span class="tech-icon javascript" aria-hidden="true">JS</span
+                  >JavaScript
+                </li>
+                <li>
+                  <span class="tech-icon html" aria-hidden="true"
+                    >&lt;/&gt;</span
+                  >HTML
+                </li>
+                <li>
+                  <span class="tech-icon css" aria-hidden="true">#</span>CSS
+                </li>
+              </ul>
+            </div>
+            <div class="skill-panel">
+              <p class="panel-label">Ampliando possibilidades</p>
+              <h3>Também no repertório</h3>
+              <ul class="skills-icons">
+                <li>
+                  <span class="tech-icon node" aria-hidden="true">N</span
+                  >Node.js
+                </li>
+                <li>
+                  <span class="tech-icon" aria-hidden="true">TS</span>TypeScript
+                </li>
+                <li>
+                  <span class="tech-icon" aria-hidden="true">~</span>Tailwind
+                  CSS
+                </li>
+                <li>
+                  <span class="tech-icon" aria-hidden="true">E</span
+                  >Electron.js
+                </li>
+              </ul>
             </div>
           </div>
+          <div class="skills-block-3">
+            <h3>Além da interface</h3>
+            <ul class="additional-skills">
+              <li>Liderança e gestão de equipes front-end</li>
+              <li>Electron.js e aplicações desktop</li>
+              <li>Uso de agentes de IA no desenvolvimento</li>
+              <li>Git e GitHub</li>
+              <li>Integração com APIs REST</li>
+              <li>MongoDB, PostgreSQL, MySQL e SQLite</li>
+              <li>UX/UI e design gráfico</li>
+              <li>Criação e tratamento de imagens</li>
+              <li>Python e Power BI</li>
+            </ul>
+          </div>
+          <p class="working-style">
+            <strong>Meu jeito de trabalhar:</strong> comunicação clara,
+            objetividade, planejamento e resolução de problemas, na colaboração
+            com o time e em cada etapa da entrega.
+          </p>
         </section>
-      </div>
-    </main>
+        <section
+          class="section project"
+          id="projects"
+          aria-labelledby="projects-title"
+        >
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="eyebrow">Ideias que viraram código</p>
+              <h2 id="projects-title">Projetos em destaque</h2>
+              <p>Uma seleção para conhecer minha forma de construir.</p>
+            </div>
+            <a
+              class="text-link"
+              href="https://github.com/SrBaliardo?tab=repositories"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Todos no GitHub
+              <svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-external"></use></svg
+            ></a>
+          </div>
+          <div class="featured-grid">
+            <article class="project-card" data-project="metroid-burger">
+              <div class="project-preview">
+                <img
+                  class="img-card"
+                  src="./images/previews/metroid-burger.webp"
+                  alt="Interface do projeto Metroid Burger"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                /><span class="project-category">Aplicação full stack</span>
+              </div>
+              <div class="card-content">
+                <div class="project-meta">
+                  <span class="language" data-language="JavaScript"
+                    >JavaScript</span
+                  ><span class="project-index" aria-hidden="true">01</span>
+                </div>
+                <h3 class="title-project">Metroid Burger</h3>
+                <p class="desc-project">
+                  Gerenciamento de uma hamburgueria: pedidos, produtos e
+                  usuários em uma interface inspirada no universo de Metroid.
+                </p>
+                <ul class="project-tags" aria-label="Características">
+                  <li>Full stack</li>
+                  <li>JavaScript</li>
+                  <li>Gestão de pedidos</li>
+                </ul>
+                <div class="btn-card">
+                  <a
+                    href="https://srbaliardo.github.io/metroid-burger/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir Metroid Burger"
+                    >Ver projeto
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-external"></use></svg></a
+                  ><a
+                    href="https://github.com/SrBaliardo/metroid-burger"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ver código de Metroid Burger"
+                    ><svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-code"></use>
+                    </svg>
+                    Código</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-project="countries-search">
+              <div class="project-preview">
+                <img
+                  class="img-card"
+                  src="./images/previews/countries-search.webp"
+                  alt="Interface do projeto Countries Search"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                /><span class="project-category">Exploração de dados</span>
+              </div>
+              <div class="card-content">
+                <div class="project-meta">
+                  <span class="language" data-language="JavaScript"
+                    >JavaScript</span
+                  ><span class="project-index" aria-hidden="true">02</span>
+                </div>
+                <h3 class="title-project">Countries Search</h3>
+                <p class="desc-project">
+                  Uma interface para pesquisar países e explorar informações
+                  sobre o mundo. Um projeto de prática e evolução com React.
+                </p>
+                <ul class="project-tags" aria-label="Características">
+                  <li>React</li>
+                  <li>JavaScript</li>
+                  <li>Pesquisa de países</li>
+                </ul>
+                <div class="btn-card">
+                  <a
+                    href="https://countries-search-rho.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir Countries Search"
+                    >Ver projeto
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-external"></use></svg></a
+                  ><a
+                    href="https://github.com/SrBaliardo/countries-search"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ver código de Countries Search"
+                    ><svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-code"></use>
+                    </svg>
+                    Código</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project-card" data-project="photo-editor">
+              <div class="project-preview">
+                <img
+                  class="img-card"
+                  src="./images/previews/photo-editor.webp"
+                  alt="Interface do projeto SIMPLEASY Photo Editor"
+                  width="800"
+                  height="500"
+                  loading="lazy"
+                  decoding="async"
+                  draggable="false"
+                /><span class="project-category">Ferramenta interativa</span>
+              </div>
+              <div class="card-content">
+                <div class="project-meta">
+                  <span class="language" data-language="JavaScript"
+                    >JavaScript</span
+                  ><span class="project-index" aria-hidden="true">03</span>
+                </div>
+                <h3 class="title-project">SIMPLEASY Photo Editor</h3>
+                <p class="desc-project">
+                  Um editor de fotos simples e direto, com redimensionamento de
+                  imagens feito com JavaScript.
+                </p>
+                <ul class="project-tags" aria-label="Características">
+                  <li>JavaScript</li>
+                  <li>Imagens</li>
+                  <li>Interatividade</li>
+                </ul>
+                <div class="btn-card">
+                  <a
+                    href="https://srbaliardo.github.io/photo-editor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Abrir SIMPLEASY Photo Editor"
+                    >Ver projeto
+                    <svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-external"></use></svg></a
+                  ><a
+                    href="https://github.com/SrBaliardo/photo-editor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Ver código de SIMPLEASY Photo Editor"
+                    ><svg class="icon" aria-hidden="true" focusable="false">
+                      <use href="#icon-code"></use>
+                    </svg>
+                    Código</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="explore-projects" aria-labelledby="explore-title">
+            <div class="explore-heading">
+              <h3 id="explore-title">Continue explorando</h3>
+              <div class="carousel-controls" hidden>
+                <button
+                  class="icon-button"
+                  id="autoplay"
+                  type="button"
+                  aria-label="Ativar reprodução automática"
+                  aria-pressed="false"
+                  aria-controls="project-list"
+                >
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-play"></use>
+                  </svg></button
+                ><button
+                  class="btn-nav icon-button"
+                  id="left"
+                  type="button"
+                  aria-label="Projetos anteriores"
+                  aria-controls="project-list"
+                >
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-left"></use>
+                  </svg></button
+                ><button
+                  class="btn-nav icon-button"
+                  id="right"
+                  type="button"
+                  aria-label="Próximos projetos"
+                  aria-controls="project-list"
+                >
+                  <svg class="icon" aria-hidden="true" focusable="false">
+                    <use href="#icon-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="project-filters" hidden>
+              <label class="field search-field" for="project-search"
+                >Buscar projeto<input
+                  id="project-search"
+                  type="search"
+                  placeholder="Nome, descrição ou tecnologia"
+                  autocomplete="off"
+                  maxlength="100" /></label
+              ><label class="field" for="project-language"
+                >Linguagem principal<select id="project-language">
+                  <option value="">Todas as linguagens</option>
+                </select></label
+              >
+            </div>
+            <p
+              class="projects-feedback"
+              id="projects-feedback"
+              role="status"
+              aria-live="polite"
+            >
+              28 projetos para explorar. Use a rolagem horizontal para navegar.
+            </p>
+            <div class="box-project">
+              <div
+                class="box-cards"
+                id="project-list"
+                role="region"
+                aria-label="Outros projetos, lista horizontal"
+                tabindex="0"
+              >
+                <article class="project-card" data-project="veding-machine">
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      veding machine
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">01</span>
+                    </div>
+                    <h3 class="title-project">veding machine</h3>
+                    <p class="desc-project">
+                      Projeto com Eletron.js para &quot;vending machines&quot; -
+                      modelo medalhas comemorativas com banco local e conexão
+                      para pagamento/liberação produto (mock no repo).
+                    </p>
 
-    <footer id="contact">
-      <h2>Contato</h2>
-      <div class="footer-content">
-        <div class="box-contact">
-          <ul>
-            <a href="https://www.linkedin.com/in/john-baliardo" target="_blank">
-              <i class="fab fa-linkedin-in"><span> /john-baliardo</span></i>
-            </a>
+                    <div class="btn-card">
+                      <a
+                        href="https://github.com/SrBaliardo/veding-machine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de veding machine"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="appWeb_Aurora">
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      appWeb Aurora
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">02</span>
+                    </div>
+                    <h3 class="title-project">appWeb Aurora</h3>
+                    <p class="desc-project">
+                      Plataforma de jogos infantil com divulgação de livros das
+                      aventuras da &quot;Menina Aurora e a Capivara
+                      Curiosa&quot; e &quot;Aurora Goodies&quot;.
+                    </p>
 
-            <a href="https://github.com/SrBaliardo" target="_blank">
-              <i class="fab fa-github"><span> /srbaliardo</span></i>
-            </a>
+                    <div class="btn-card">
+                      <a
+                        href="https://appweb-aurora-roan.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir appWeb Aurora"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/appWeb_Aurora"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de appWeb Aurora"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="nice-multiservicos">
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      nice multiservicos
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">03</span>
+                    </div>
+                    <h3 class="title-project">nice multiservicos</h3>
+                    <p class="desc-project">
+                      Página para empresa de multiserviços - &quot;Nice
+                      Multiserviços&quot;. Chama a Nice!
+                    </p>
 
-            <a href="https://wa.me/5516996402765" target="_blank">
-              <i class="fab fa-whatsapp"><span> /whatsapp</span></i>
-            </a>
+                    <div class="btn-card">
+                      <a
+                        href="https://nice-multiservicos.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir nice multiservicos"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/nice-multiservicos"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de nice multiservicos"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="hivetron-technology-v2"
+                >
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      hivetron technology v2
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">04</span>
+                    </div>
+                    <h3 class="title-project">hivetron technology v2</h3>
+                    <p class="desc-project">
+                      Este é o portfólio da HIVETRON Technology, desenvolvedores
+                      especializados que transformam ideias em soluções
+                      personalizadas e inovadoras.
+                    </p>
 
-            <a href="mailto:srbaliardo@gmail.com" target="_blank">
-              <i class="fas fa-envelope"><span> /srbaliardo@gmail.com</span></i>
-            </a>
-          </ul>
+                    <div class="btn-card">
+                      <a
+                        href="https://hivetron-technology-v2.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir hivetron technology v2"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/hivetron-technology-v2"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de hivetron technology v2"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="circulo-de-sangue">
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      circulo de sangue
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">05</span>
+                    </div>
+                    <h3 class="title-project">circulo de sangue</h3>
+                    <p class="desc-project">
+                      Página destinada ao role play. Contará com vários títulos
+                      e suas respectivas regras, lores e etc.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://circulo-de-sangue.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir circulo de sangue"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/circulo-de-sangue"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de circulo de sangue"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="hivetron-technology"
+                >
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      hivetron technology
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">06</span>
+                    </div>
+                    <h3 class="title-project">hivetron technology</h3>
+                    <p class="desc-project">
+                      Este é o portfólio da HIVETRON Technology, desenvolvedores
+                      especializados que transformam ideias em soluções
+                      personalizadas e inovadoras.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://hivetron-technology.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir hivetron technology"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/hivetron-technology"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de hivetron technology"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="previsao-tempo">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/previsao-tempo.webp"
+                      alt="Interface do projeto previsao tempo"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="HTML">HTML</span
+                      ><span class="project-index" aria-hidden="true">07</span>
+                    </div>
+                    <h3 class="title-project">previsao tempo</h3>
+                    <p class="desc-project">
+                      Visualiza a previsão do tempo na cidade desejada em tempo
+                      real.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/previsao-tempo/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir previsao tempo"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/previsao-tempo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de previsao tempo"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="lucky-whale-raffles"
+                >
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/lucky-whale-raffles.webp"
+                      alt="Interface do projeto lucky whale raffles"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">08</span>
+                    </div>
+                    <h3 class="title-project">lucky whale raffles</h3>
+                    <p class="desc-project">
+                      [FULLSTACK] - Projeto para criar e gerenciar campanhas sem
+                      fins lucrativos para ajudar quem precisa oferendo brindes
+                      aos doadores.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://lucky-whale-raffles.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir lucky whale raffles"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/lucky-whale-raffles"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de lucky whale raffles"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="diabetes-desease-project"
+                >
+                  <div class="project-preview">
+                    <div class="project-placeholder" aria-hidden="true">
+                      diabetes desease project
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="HTML">HTML</span
+                      ><span class="project-index" aria-hidden="true">09</span>
+                    </div>
+                    <h3 class="title-project">diabetes desease project</h3>
+                    <p class="desc-project">
+                      Este material faz parte de um trabalho acadêmico
+                      desenvolvido para uma turma do curso Técnico em Enfermagem
+                      da Escola GRAU Técnico, como parte das atividades
+                      avaliativas.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/diabetes-desease-project/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir diabetes desease project"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/diabetes-desease-project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de diabetes desease project"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="toggle-theme">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/toggle-theme.webp"
+                      alt="Interface do projeto toggle theme"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">10</span>
+                    </div>
+                    <h3 class="title-project">toggle theme</h3>
+                    <p class="desc-project">
+                      Código rápido para alternar temas. Por exemplo: claro /
+                      escuro.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/toggle-theme/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir toggle theme"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/toggle-theme"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de toggle theme"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="password-generator">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/password-generator.webp"
+                      alt="Interface do projeto password generator"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">11</span>
+                    </div>
+                    <h3 class="title-project">password generator</h3>
+                    <p class="desc-project">
+                      Gerador de senhas com personalização e quantificação de
+                      segurança, alterações e criação em tempo real.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/password-generator/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir password generator"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/password-generator"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de password generator"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="sitePortfolio">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/sitePortfolio.webp"
+                      alt="Interface do projeto sitePortfolio"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">12</span>
+                    </div>
+                    <h3 class="title-project">sitePortfolio</h3>
+                    <p class="desc-project">
+                      Para ver os códigos e a progressão do conhecimento -
+                      Portóflio sempre em desenvolvimento porque o aprendizado
+                      nunca para!
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/sitePortfolio/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir sitePortfolio"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/sitePortfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de sitePortfolio"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="pokedex">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/pokedex.webp"
+                      alt="Interface do projeto pokedex"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">13</span>
+                    </div>
+                    <h3 class="title-project">pokedex</h3>
+                    <p class="desc-project">
+                      Pesquise seu Pokémon favorito com essa Pokédex. Já são
+                      mais de 1k!
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/pokedex/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir pokedex"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/pokedex"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de pokedex"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="user-register">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/user-register.webp"
+                      alt="Interface do projeto user register"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">14</span>
+                    </div>
+                    <h3 class="title-project">user register</h3>
+                    <p class="desc-project">
+                      Uma agenda de contatos divertida, rápida e fácil. Não
+                      perca mais seus contatos.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://github.com/SrBaliardo/user-register"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de user register"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="simple-todolist">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/simple-todolist.webp"
+                      alt="Interface do projeto simple todolist"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">15</span>
+                    </div>
+                    <h3 class="title-project">simple todolist</h3>
+                    <p class="desc-project">
+                      Lista de tarefas simples para implementar em qualquer
+                      lugar de forma rápida e fácil.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/simple-todolist/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir simple todolist"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/simple-todolist"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de simple todolist"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="music-player">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/music-player.webp"
+                      alt="Interface do projeto music player"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">16</span>
+                    </div>
+                    <h3 class="title-project">music player</h3>
+                    <p class="desc-project">
+                      JHAB-Play é um reprodutor de música pessoal para ouvir e
+                      relaxar. Você pode colocar suas músicas favoritas nele.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/music-player/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir music player"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/music-player"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de music player"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="fat-bird">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/fat-bird.webp"
+                      alt="Interface do projeto fat bird"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">17</span>
+                    </div>
+                    <h3 class="title-project">fat bird</h3>
+                    <p class="desc-project">
+                      Um joguinho para passar o tempo. Clique para se manter
+                      voando e cuidado com a cabeça!
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/fat-bird/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir fat bird"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/fat-bird"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de fat bird"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="gta-v-sitest">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/gta-v-sitest.webp"
+                      alt="Interface do projeto gta v sitest"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">18</span>
+                    </div>
+                    <h3 class="title-project">gta v sitest</h3>
+                    <p class="desc-project">
+                      Landingpage GTA V - Conheça o jogo, compre ou obtenha
+                      suporte direto da Rockstar.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/gta-v-sitest/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir gta v sitest"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/gta-v-sitest"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de gta v sitest"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="piece-project">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/piece-project.webp"
+                      alt="Interface do projeto piece project"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="HTML">HTML</span
+                      ><span class="project-index" aria-hidden="true">19</span>
+                    </div>
+                    <h3 class="title-project">piece project</h3>
+                    <p class="desc-project">
+                      Uma página com informações sobre os personagens do anime
+                      One Piece. (HTML-CSS-JavaScript)
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/piece-project/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir piece project"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/piece-project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de piece project"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="cash-converter">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/cash-converter.webp"
+                      alt="Interface do projeto cash converter"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">20</span>
+                    </div>
+                    <h3 class="title-project">cash converter</h3>
+                    <p class="desc-project">
+                      Conversor de moedas. Converta valores para diferentes
+                      moedas de diferentes países em um clique.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/cash-converter/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir cash converter"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/cash-converter"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de cash converter"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="landingpage-devgrid"
+                >
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/landingpage-devgrid.webp"
+                      alt="Interface do projeto landingpage devgrid"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">21</span>
+                    </div>
+                    <h3 class="title-project">landingpage devgrid</h3>
+                    <p class="desc-project">
+                      Projeto didático para prática de base HTML e CSS, porém,
+                      escalável e de fácil adaptação para negócios ou outras
+                      ferramentas.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/landingpage-devgrid/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir landingpage devgrid"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/landingpage-devgrid"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de landingpage devgrid"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="xmen-project">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/xmen-project.webp"
+                      alt="Interface do projeto xmen project"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="HTML">HTML</span
+                      ><span class="project-index" aria-hidden="true">22</span>
+                    </div>
+                    <h3 class="title-project">xmen project</h3>
+                    <p class="desc-project">
+                      Página dos X-Men - ao passar o mouse sobre o cartão do
+                      personagem, os dados são alterados de acordo com a
+                      seleção.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/xmen-project/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir xmen project"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/xmen-project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de xmen project"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="landingpage-mario">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/landingpage-mario.webp"
+                      alt="Interface do projeto landingpage mario"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="HTML">HTML</span
+                      ><span class="project-index" aria-hidden="true">23</span>
+                    </div>
+                    <h3 class="title-project">landingpage mario</h3>
+                    <p class="desc-project">
+                      Landing page dos melhores encanadores do mundo! Contando
+                      com apresentação e serviços.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/landingpage-mario/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir landingpage mario"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/landingpage-mario"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de landingpage mario"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="todolist-fullstack">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/todolist-fullstack.webp"
+                      alt="Interface do projeto todolist fullstack"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">24</span>
+                    </div>
+                    <h3 class="title-project">todolist fullstack</h3>
+                    <p class="desc-project">
+                      Nessa “To Do List”, foram usados Docker e MySQL, bem como
+                      Node.js e React.js. Projeto realizado para prática de
+                      aplicação Fullstack.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://todolist-fullstack-pi.vercel.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir todolist fullstack"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/todolist-fullstack"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de todolist fullstack"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="imc-calculator">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/imc-calculator.webp"
+                      alt="Interface do projeto imc calculator"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">25</span>
+                    </div>
+                    <h3 class="title-project">imc calculator</h3>
+                    <p class="desc-project">
+                      Calcule seu IMC informando seu peso e altura e fique de
+                      olho no resultado! Saúde em primeiro lugar.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/imc-calculator/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir imc calculator"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/imc-calculator"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de imc calculator"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="memory-game">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/memory-game.webp"
+                      alt="Interface do projeto memory game"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">26</span>
+                    </div>
+                    <h3 class="title-project">memory game</h3>
+                    <p class="desc-project">
+                      Teste sua memória com esse divertido jogo com as figuras
+                      engraçadas de Rick e Morty. Faça login para se rankear e
+                      disputar com seus amigos!
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/memory-game/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir memory game"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/memory-game"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de memory game"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article class="project-card" data-project="random-numbers-gen">
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/random-numbers-gen.webp"
+                      alt="Interface do projeto random numbers gen"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="CSS">CSS</span
+                      ><span class="project-index" aria-hidden="true">27</span>
+                    </div>
+                    <h3 class="title-project">random numbers gen</h3>
+                    <p class="desc-project">
+                      Faça sorteios de números aleatórios com este gerador super
+                      simples e funcional.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/random-numbers-gen/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir random numbers gen"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/random-numbers-gen"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de random numbers gen"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+                <article
+                  class="project-card"
+                  data-project="jokempo-lizard-spock"
+                >
+                  <div class="project-preview">
+                    <img
+                      class="img-card"
+                      src="./images/previews/jokempo-lizard-spock.webp"
+                      alt="Interface do projeto jokempo lizard spock"
+                      width="800"
+                      height="500"
+                      loading="lazy"
+                      decoding="async"
+                      draggable="false"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <div class="project-meta">
+                      <span class="language" data-language="JavaScript"
+                        >JavaScript</span
+                      ><span class="project-index" aria-hidden="true">28</span>
+                    </div>
+                    <h3 class="title-project">jokempo lizard spock</h3>
+                    <p class="desc-project">
+                      Uma variação do clássico jokenpô e apresentada na
+                      divertida série “The Big Bang Theory”.
+                    </p>
+
+                    <div class="btn-card">
+                      <a
+                        href="https://srbaliardo.github.io/jokempo-lizard-spock/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Abrir jokempo lizard spock"
+                        >Ver projeto
+                        <svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-external"></use></svg></a
+                      ><a
+                        href="https://github.com/SrBaliardo/jokempo-lizard-spock"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ver código de jokempo lizard spock"
+                        ><svg class="icon" aria-hidden="true" focusable="false">
+                          <use href="#icon-code"></use>
+                        </svg>
+                        Código</a
+                      >
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="empty-projects" id="empty-projects" hidden>
+              <p>Nenhum projeto encontrado. Tente outro nome ou linguagem.</p>
+              <button class="button" id="clear-filters" type="button">
+                Limpar filtros
+              </button>
+            </div>
+            <noscript
+              ><p class="projects-feedback">
+                A seleção de projetos está disponível mesmo sem JavaScript. Para
+                ver as novidades, visite meu GitHub.
+              </p></noscript
+            >
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="section">
+          <div class="section-heading contact-heading">
+            <p class="eyebrow">Vamos criar algo juntos?</p>
+            <h2 id="contact-title">
+              Uma boa ideia começa<br />com uma conversa.
+            </h2>
+            <p>
+              Tem um projeto em mente ou quer trocar uma ideia sobre tecnologia?
+              Escolha o melhor caminho.
+            </p>
+          </div>
+          <div class="contact-grid" aria-labelledby="contact-title">
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/john-baliardo"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                class="icon icon-brand"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-linkedin"></use></svg
+              ><strong>LinkedIn</strong><span>/john-baliardo</span
+              ><span class="contact-cta"
+                >Vamos nos conectar<svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-external"></use></svg></span
+            ></a>
+            <a
+              class="contact-card"
+              href="https://github.com/SrBaliardo"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg
+                class="icon icon-brand"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <use href="#icon-github"></use></svg
+              ><strong>GitHub</strong><span>/SrBaliardo</span
+              ><span class="contact-cta"
+                >Explore meu código<svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-external"></use></svg></span
+            ></a>
+            <a
+              class="contact-card"
+              href="https://wa.me/5516996402765"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-message"></use></svg
+              ><strong>WhatsApp</strong><span>Mensagem direta</span
+              ><span class="contact-cta"
+                >Vamos conversar<svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-external"></use></svg></span
+            ></a>
+            <a
+              class="contact-card"
+              href="mailto:srbaliardo@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><svg class="icon" aria-hidden="true" focusable="false">
+                <use href="#icon-mail"></use></svg
+              ><strong>E-mail</strong><span>srbaliardo@gmail.com</span
+              ><span class="contact-cta"
+                >Envie sua ideia<svg
+                  class="icon"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <use href="#icon-external"></use></svg></span
+            ></a>
+          </div>
         </div>
-        <p>
-          <span class="far fa-copyright c"></span> 2024 SrBaliardo - Todos os
-          direitos reservados
-        </p>
-      </div>
-    </footer>
-
-    <div class="div-contact resume-box">
-      <i class="far fa-times-circle" onclick="hiddenResume()"></i>
+        <div class="footer-bottom">
+          <p>
+            © <span id="copyright-year">2026</span> John Baliardo · JHAB Dev
+          </p>
+          <a class="text-link" href="./resume.pdf" data-resume
+            >Ver meu currículo
+            <svg class="icon" aria-hidden="true" focusable="false">
+              <use href="#icon-file"></use></svg
+          ></a>
+        </div>
+        <a
+          class="btn-top icon-button"
+          href="#top"
+          aria-label="Voltar ao início"
+          hidden
+          ><svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-up"></use></svg
+        ></a>
+      </footer>
     </div>
-    <div class="resume-bg" onclick="hiddenResume()"></div>
 
-    <script
-      src="https://kit.fontawesome.com/62ed73a01b.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="./js/typeFunction.js"></script>
-    <script src="./js/btnTop.js"></script>
-    <script src="./js/btnClickSplash.js"></script>
-    <script src="./js/btnReadMore.js"></script>
-    <script src="./js/showActive.js"></script>
-    <script src="./js/getApi.js"></script>
-    <script src="./js/carouselSlide.js"></script>
-    <script src="./js/showResume.js"></script>
+    <dialog
+      class="resume-box"
+      id="resume-dialog"
+      aria-labelledby="resume-title"
+    >
+      <div class="resume-heading">
+        <h2 id="resume-title">Currículo · John Baliardo</h2>
+        <button
+          class="icon-button"
+          id="close-resume"
+          type="button"
+          aria-label="Fechar currículo"
+          autofocus
+        >
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="resume-actions">
+        <a
+          class="text-link"
+          href="./resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Abrir em outra aba
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-external"></use></svg></a
+        ><a
+          class="text-link"
+          href="./resume.pdf"
+          download="Curriculo-John-Baliardo.pdf"
+          >Baixar PDF
+          <svg class="icon" aria-hidden="true" focusable="false">
+            <use href="#icon-down"></use></svg
+        ></a>
+      </div>
+    </dialog>
   </body>
 </html>

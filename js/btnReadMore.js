@@ -1,20 +1,17 @@
-const textAbout = document.querySelector(".text-about");
-const textInitHeight = textAbout.clientHeight;
-const btnShowMore = document.getElementById("toggle");
+(() => {
+  const details = document.getElementById("about-details");
+  const button = document.getElementById("toggle");
+  const label = button.querySelector("span");
 
-function toggle(event) {
-  event.preventDefault();
-  const isExpanded = event.target.dataset.state === "more";
+  details.hidden = true;
+  button.hidden = false;
+  button.setAttribute("aria-expanded", "false");
+  label.textContent = "Mais sobre minha trajetória";
 
-  textAbout.style.maxHeight = isExpanded
-    ? `${textAbout.scrollHeight}px`
-    : `${textInitHeight}px`;
-
-  textAbout.classList.toggle("expanded", isExpanded);
-
-  event.target.setAttribute("data-state", isExpanded ? "less" : "more");
-  event.target.innerHTML = isExpanded ? "...Ver menos" : "Ler mais sobre...";
-}
-
-btnShowMore.addEventListener("click", toggle);
-btnShowMore.addEventListener("touchstart", toggle);
+  button.addEventListener("click", () => {
+    const expanded = button.getAttribute("aria-expanded") === "true";
+    details.hidden = expanded;
+    button.setAttribute("aria-expanded", String(!expanded));
+    label.textContent = expanded ? "Mais sobre minha trajetória" : "Ver menos";
+  });
+})();

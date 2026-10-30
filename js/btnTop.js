@@ -1,17 +1,23 @@
-const btnToTop = document.querySelector(".btn-top");
+(() => {
+  const button = document.querySelector(".btn-top");
+  const year = document.getElementById("copyright-year");
+  let scheduled = false;
 
-function toTop(event) {
-  event.preventDefault();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY < 300) {
-    btnToTop.style.display = "none";
-  } else {
-    btnToTop.style.display = "block";
+  function update() {
+    button.hidden = window.scrollY < 500;
+    scheduled = false;
   }
-});
 
-btnToTop.addEventListener("click", toTop);
-btnToTop.addEventListener("touchstart", toTop);
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(update);
+    },
+    { passive: true },
+  );
+
+  year.textContent = new Date().getFullYear();
+  update();
+})();
