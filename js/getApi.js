@@ -1,4 +1,6 @@
-(() => {
+window.PortfolioI18n.ready.then(() => {
+  const i18n = window.PortfolioI18n;
+  const t = i18n.t;
   const data = window.PortfolioData;
   const list = document.getElementById("project-list");
   const status = document.getElementById("projects-feedback");
@@ -73,7 +75,7 @@
 
     if (project.preview) {
       const image = element("img", "img-card");
-      image.alt = "Interface do projeto " + title;
+      image.alt = t("projects.imageAlt", { title });
       image.width = 800;
       image.height = 500;
       image.loading = "lazy";
@@ -84,6 +86,7 @@
       });
       image.src = project.preview;
       preview.append(image);
+      window.PortfolioLoading.watchImage(image);
     } else {
       preview.append(placeholder);
     }
@@ -93,7 +96,7 @@
     const languageLabel = element(
       "span",
       "language",
-      project.language || "Projeto",
+      project.language || t("projects.generic"),
     );
     languageLabel.dataset.language = project.language || "";
     const number = element(
@@ -107,24 +110,31 @@
     const homepage = safeUrl(project.homepage);
     if (homepage)
       links.append(
-        projectLink(homepage, "Ver projeto ", "Abrir " + title, "external"),
+        projectLink(
+          homepage,
+          t("projects.view") + " ",
+          t("projects.openLabel", { title }),
+          "external",
+        ),
       );
     const repository = safeUrl(
       project.html_url,
       "https://github.com/SrBaliardo/" + encodeURIComponent(project.name),
     );
     links.append(
-      projectLink(repository, "Código ", "Ver código de " + title, "code"),
+      projectLink(
+        repository,
+        t("projects.code") + " ",
+        t("projects.codeLabel", { title }),
+        "code",
+      ),
     );
+    const paragraph = element("p", "desc-project", i18n.description(project));
+    paragraph.dataset.portuguese = project.description || "";
     content.append(
       meta,
       element("h4", "title-project", title),
-      element(
-        "p",
-        "desc-project",
-        project.description ||
-          "Explore o código, a estrutura e a proposta deste projeto no GitHub.",
-      ),
+      paragraph,
       links,
     );
     card.append(preview, content);
@@ -133,7 +143,7 @@
 
   function updateLanguages() {
     const selected = language.value;
-    language.replaceChildren(new Option("Todas as linguagens", ""));
+    language.replaceChildren(new Option(t("projects.allLanguages"), ""));
     const languages = [
       ...new Set(
         projects
@@ -156,6 +166,7 @@
           project.name,
           project.title,
           project.description,
+          i18n.description(project),
           project.language,
         ].join(" "),
       ).includes(query);
@@ -165,7 +176,7 @@
       : null;
     const focusedProject =
       focusedLink?.closest("[data-project]")?.dataset.project;
-    const focusedLabel = focusedLink?.getAttribute("aria-label");
+    const focusedHref = focusedLink?.getAttribute("href");
     const previousScroll = list.scrollLeft;
     const fragment = document.createDocumentFragment();
     filtered.forEach((project, index) =>
@@ -176,17 +187,15 @@
     empty.hidden = filtered.length !== 0;
     list.scrollLeft = resetScroll ? 0 : previousScroll;
     status.textContent =
-      filtered.length +
-      (filtered.length === 1
-        ? " projeto público encontrado."
-        : " projetos públicos para explorar.") +
-      (sourceMessage ? " " + sourceMessage : "");
+      t(filtered.length === 1 ? "projects.count_one" : "projects.count_other", {
+        count: filtered.length,
+      }) + (sourceMessage ? " " + t(sourceMessage) : "");
 
-    if (focusedProject && focusedLabel) {
+    if (focusedProject && focusedHref) {
       const replacement = [...list.querySelectorAll("a")].find(
         (link) =>
           link.closest("[data-project]").dataset.project === focusedProject &&
-          link.getAttribute("aria-label") === focusedLabel,
+          link.getAttribute("href") === focusedHref,
       );
       (replacement || list).focus({ preventScroll: true });
     }
@@ -262,7 +271,10 @@
         return;
     }
 
-    status.textContent = "Projetos disponíveis. Buscando novidades…";
+    window.PortfolioLoading.inline(
+      document.getElementById("projects-loading"),
+      true,
+    );
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), 12000);
 
@@ -297,11 +309,14 @@
         );
       } catch {}
     } catch {
-      sourceMessage =
-        "Exibindo a seleção salva. Explore também as novidades no GitHub.";
+      sourceMessage = "projects.saved";
       render(false);
     } finally {
       window.clearTimeout(timeout);
+      window.PortfolioLoading.inline(
+        document.getElementById("projects-loading"),
+        false,
+      );
     }
   }
 
@@ -320,5 +335,10 @@
   });
 
   updateLanguages();
+  render(false);
+  document.addEventListener("portfolio:localechange", () => {
+    updateLanguages();
+    render(false);
+  });
   refreshProjects();
-})();
+});

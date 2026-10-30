@@ -1,4 +1,5 @@
-(() => {
+window.PortfolioI18n.ready.then(() => {
+  const t = window.PortfolioI18n.t;
   const menu = document.getElementById("navigation");
   const menuButton = document.querySelector(".hamburger");
   const contacts = document.getElementById("about-contacts");
@@ -9,7 +10,7 @@
   function setMenu(open, restoreFocus = false) {
     menu.classList.toggle("active", open);
     menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    menuButton.setAttribute("aria-label", t(open ? "nav.close" : "nav.open"));
     menu.inert = narrowScreen.matches && !open;
     menuButton
       .querySelector("use")
@@ -75,5 +76,8 @@
   );
 
   setMenu(false);
+  document.addEventListener("portfolio:localechange", () =>
+    setMenu(menuButton.getAttribute("aria-expanded") === "true"),
+  );
   updateCurrentSection();
-})();
+});

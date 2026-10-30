@@ -1,4 +1,5 @@
-(() => {
+window.PortfolioI18n.ready.then(() => {
+  const t = window.PortfolioI18n.t;
   const carousel = document.getElementById("project-list");
   const controls = document.querySelector(".carousel-controls");
   const previous = document.getElementById("left");
@@ -39,10 +40,10 @@
     play.setAttribute(
       "aria-label",
       motion.matches
-        ? "Reprodução automática desativada: movimento reduzido"
+        ? t("carousel.reduced")
         : automatic
-          ? "Pausar reprodução automática"
-          : "Ativar reprodução automática",
+          ? t("carousel.pause")
+          : t("carousel.play"),
     );
     play
       .querySelector("use")
@@ -171,6 +172,8 @@
   carousel.addEventListener("projectsupdated", updateControls);
   document.addEventListener("visibilitychange", synchronize);
   motion.addEventListener("change", stopAutomatic);
+  document.addEventListener("portfolio:localechange", synchronize);
+  document.addEventListener("portfolio:themechange", stopAutomatic);
 
   const observer = new IntersectionObserver(
     ([entry]) => {
@@ -182,4 +185,4 @@
   observer.observe(carousel);
   new ResizeObserver(updateControls).observe(carousel);
   updateControls();
-})();
+});

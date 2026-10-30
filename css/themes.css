@@ -1,0 +1,123 @@
+:root[data-theme="brisa"] {
+  color-scheme: light;
+  --background: #eef3f5;
+  --surface: #ffffff;
+  --surface-raised: #e2ecef;
+  --text: #243c49;
+  --muted: #506773;
+  --blue: #315a74;
+  --mint: #246b69;
+  --purple: #729392;
+  --orchid: #446b79;
+  --line: #cbd9df;
+  --heading: "Roboto", "Segoe UI", sans-serif;
+}
+[data-theme="brisa"] body {
+  background: var(--background);
+}
+[data-theme="brisa"] body::before {
+  background: none;
+}
+[data-theme="brisa"] ::selection {
+  background: #c9e0e1;
+  color: var(--text);
+}
+[data-theme="brisa"] .button:hover {
+  background: #e1ebed;
+}
+[data-theme="brisa"] .button-primary {
+  background: #315f70;
+  color: #fff;
+  border-color: #315f70;
+}
+[data-theme="brisa"] .button-primary:hover {
+  background: #254c5d;
+  border-color: #254c5d;
+}
+[data-theme="brisa"] .icontacts a:hover {
+  background: #dce8eb;
+}
+[data-theme="brisa"] .border {
+  background: #c4d7df;
+}
+[data-theme="brisa"] .border::before {
+  animation: none;
+  background: #90b2bf;
+  inset: 0;
+}
+[data-theme="brisa"] .border::after {
+  inset: 2px;
+  background: #e5eef1;
+}
+[data-theme="brisa"] .portrait-panel,
+[data-theme="brisa"] .skill-panel,
+[data-theme="brisa"] .project-card,
+[data-theme="brisa"] .contact-card,
+[data-theme="brisa"] .btn-top {
+  background: var(--surface);
+}
+[data-theme="brisa"] .tech-icon {
+  border-color: #cedde2;
+  background: #edf3f5;
+  color: #315f70;
+}
+[data-theme="brisa"] .tech-icon.react {
+  color: #25667e;
+}
+[data-theme="brisa"] .tech-icon.javascript {
+  color: #795c11;
+}
+[data-theme="brisa"] .tech-icon.html {
+  color: #a14426;
+}
+[data-theme="brisa"] .tech-icon.css {
+  color: #635686;
+}
+[data-theme="brisa"] .tech-icon.node {
+  color: #3d7044;
+}
+[data-theme="brisa"] .working-style {
+  background: #e2ecee;
+}
+[data-theme="brisa"] .project-card:hover {
+  border-color: #8aabb5;
+  box-shadow: 0 8px 22px #294e6110;
+}
+[data-theme="brisa"] .project-preview,
+[data-theme="brisa"] .project-placeholder {
+  background: #dce8ed;
+}
+[data-theme="brisa"] .project-category {
+  background: #f7fafb;
+  border-color: #d4e0e4;
+}
+[data-theme="brisa"] .project-index {
+  color: var(--muted);
+}
+[data-theme="brisa"] .project-tags li {
+  background: #e8f1f0;
+  border-color: #c6dbd8;
+}
+[data-theme="brisa"] .field input::placeholder {
+  color: #596e79;
+}
+[data-theme="brisa"] .contact-card:hover {
+  background: #e6eff1;
+}
+[data-theme="brisa"] .theme-thumb {
+  box-shadow: none;
+}
+[data-theme="brisa"] .cursor-splash-layer {
+  display: none;
+}
+[data-theme="brisa"] .resume-box::backdrop {
+  background: #263f50b3;
+}
+[data-theme="brisa"] .skip-link {
+  color: #fff;
+}
+@media (max-width: 560px) {
+  [data-theme="brisa"] .site-header nav ul[data-enhanced] {
+    background: var(--surface);
+  }
+}

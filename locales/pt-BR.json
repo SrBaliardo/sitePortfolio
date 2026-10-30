@@ -1,0 +1,214 @@
+{
+  "messages": {
+    "meta.title": "John Baliardo | Desenvolvedor Front End",
+    "meta.description": "Portfólio de John Baliardo, desenvolvedor Front End. Conheça meus projetos, habilidades e soluções web com foco em interfaces intuitivas e eficientes.",
+    "meta.socialDescription": "Interfaces intuitivas, projetos com personalidade e desenvolvimento web. Conheça meu trabalho.",
+    "meta.imageAlt": "John Baliardo, desenvolvedor Front End",
+    "nav.skip": "Pular para o conteúdo",
+    "nav.home": "John Baliardo, início",
+    "nav.label": "Navegação principal",
+    "nav.about": "Sobre mim",
+    "nav.skills": "Habilidades",
+    "nav.projects": "Projetos",
+    "nav.contact": "Contatos",
+    "hero.eyebrow": "Criatividade & desenvolvimento web",
+    "hero.role": "Desenvolvedor Front End",
+    "hero.description": "Transformo ideias em interfaces intuitivas, eficientes e com personalidade.",
+    "hero.projects": "Conheça meus projetos",
+    "contact.talk": "Vamos conversar",
+    "hero.social": "Perfis e currículo",
+    "hero.scroll": "Um pouco sobre mim",
+    "about.eyebrow": "Quem está por trás do código",
+    "about.intro": "<strong>Olá, sou o John Baliardo.</strong> Sou <strong>líder de front-end na SIFAT</strong>, onde trabalho no desenvolvimento de um ERP, principalmente com React, e na gestão do time de desenvolvedores front-end, incluindo a atuação de profissionais full stack nessa frente.",
+    "about.experience": "Atuo no desenvolvimento desde janeiro de 2023 e também realizo projetos pontuais, com experiência em sistemas ERP e outras aplicações web.",
+    "about.history": "Minha trajetória começou entre design gráfico, edição de imagens e criação de sites, passando também pelo ensino de informática e desenvolvimento web. Essa experiência acompanha meu cuidado com interfaces intuitivas e com a experiência de quem usa.",
+    "about.stack": "Minha stack principal é <strong>React, JavaScript e Styled-Components/CSS</strong>. Também tenho familiaridade com Tailwind CSS, TypeScript, APIs REST e UX/UI. Tenho formação em Full Stack e utilizo Node.js no Back End com MongoDB, PostgreSQL e SQLite, além de Electron.js no desenvolvimento de aplicações desktop.",
+    "about.values": "Valorizo comunicação clara, objetividade e planejamento, tanto na construção das soluções quanto na colaboração com o time, com compromisso com a qualidade e os prazos de cada entrega.",
+    "about.contacts": "Ver contatos",
+    "contact.direct": "Mensagem direta",
+    "about.photoAlt": "Foto de John Baliardo",
+    "about.caption": "Design encontra código.",
+    "about.captionDetail": "Interfaces pensadas para quem usa.",
+    "skills.eyebrow": "Ferramentas para construir",
+    "skills.intro": "Uma base sólida, curiosidade para aprender e atenção à experiência de quem usa.",
+    "skills.daily": "No dia a dia",
+    "skills.main": "Minha stack principal",
+    "skills.possibilities": "Ampliando possibilidades",
+    "skills.repertoire": "Também no repertório",
+    "skills.beyond": "Além da interface",
+    "skills.leadership": "Liderança e gestão de equipes front-end",
+    "skills.desktop": "Electron.js e aplicações desktop",
+    "skills.ai": "Uso de agentes de IA no desenvolvimento",
+    "skills.git": "Git e GitHub",
+    "skills.api": "Integração com APIs REST",
+    "skills.databases": "MongoDB, PostgreSQL, MySQL e SQLite",
+    "skills.design": "UX/UI e design gráfico",
+    "skills.images": "Criação e tratamento de imagens",
+    "skills.data": "Python e Power BI",
+    "skills.values": "<strong>Meu jeito de trabalhar:</strong> comunicação clara, objetividade, planejamento e resolução de problemas, na colaboração com o time e em cada etapa da entrega.",
+    "projects.eyebrow": "Ideias que viraram código",
+    "projects.title": "Projetos em destaque",
+    "projects.intro": "Uma seleção para conhecer minha forma de construir.",
+    "projects.github": "Todos no GitHub",
+    "projects.explore": "Continue explorando",
+    "carousel.previous": "Projetos anteriores",
+    "carousel.next": "Próximos projetos",
+    "projects.search": "Buscar projeto",
+    "projects.searchPlaceholder": "Nome, descrição ou tecnologia",
+    "projects.language": "Linguagem principal",
+    "projects.allLanguages": "Todas as linguagens",
+    "projects.region": "Outros projetos, lista horizontal",
+    "projects.empty": "Nenhum projeto encontrado. Tente outro nome ou linguagem.",
+    "projects.clear": "Limpar filtros",
+    "contact.eyebrow": "Vamos criar algo juntos?",
+    "contact.title": "Uma boa ideia começa<br>com uma conversa.",
+    "contact.intro": "Tem um projeto em mente ou quer trocar uma ideia sobre tecnologia? Escolha o melhor caminho.",
+    "contact.connect": "Vamos nos conectar",
+    "contact.code": "Explore meu código",
+    "contact.email": "E-mail",
+    "contact.idea": "Envie sua ideia",
+    "resume.view": "Ver currículo",
+    "nav.top": "Voltar ao início",
+    "resume.title": "Currículo · John Baliardo",
+    "resume.close": "Fechar currículo",
+    "resume.open": "Abrir em outra aba",
+    "resume.download": "Baixar PDF",
+    "projects.features": "Características",
+    "hero.rolePrefix": "Desenvolvedor",
+    "hero.roleSuffix": "",
+    "about.more": "Mais sobre minha trajetória",
+    "about.less": "Ver menos",
+    "nav.open": "Abrir menu",
+    "nav.close": "Fechar menu",
+    "carousel.play": "Ativar reprodução automática",
+    "carousel.pause": "Pausar reprodução automática",
+    "carousel.reduced": "Reprodução automática desativada: movimento reduzido",
+    "projects.count_one": "{count} projeto público encontrado.",
+    "projects.count_other": "{count} projetos públicos para explorar.",
+    "projects.generic": "Projeto",
+    "projects.fallback": "Explore o código, a estrutura e a proposta deste projeto no GitHub.",
+    "projects.saved": "Exibindo a seleção salva. Explore também as novidades no GitHub.",
+    "projects.fetching": "Buscando novidades no GitHub…",
+    "projects.view": "Ver projeto",
+    "projects.code": "Código",
+    "projects.openLabel": "Abrir {title}",
+    "projects.codeLabel": "Ver código de {title}",
+    "projects.imageAlt": "Interface do projeto {title}",
+    "preferences.label": "Preferências de aparência e idioma",
+    "preferences.theme": "Tema Brisa",
+    "preferences.themeHelp": "Alternar entre os temas Original e Brisa",
+    "preferences.language": "Idioma",
+    "preferences.portuguese": "Português (Brasil)",
+    "preferences.english": "Inglês (Estados Unidos)",
+    "preferences.error": "Não foi possível mudar o idioma. Tente novamente.",
+    "loading.interface": "Preparando sua experiência…",
+    "loading.theme.original": "Entrando no tema Original…",
+    "loading.theme.brisa": "Uma brisa está chegando…",
+    "loading.language": "Preparando o idioma…",
+    "loading.detail": "Só um instante. Cuidando dos últimos detalhes.",
+    "resume.loading": "Carregando currículo…",
+    "resume.iframe": "Currículo de John Baliardo em PDF",
+    "resume.language": "Documento disponível em português."
+  },
+  "projects": {
+    "veding-machine": {
+      "description": "Projeto com Eletron.js para \"vending machines\" - modelo medalhas comemorativas com banco local e conexão para pagamento/liberação produto (mock no repo)."
+    },
+    "appWeb_Aurora": {
+      "description": "Plataforma de jogos infantil com divulgação de livros das aventuras da \"Menina Aurora e a Capivara Curiosa\" e \"Aurora Goodies\"."
+    },
+    "nice-multiservicos": {
+      "description": "Página para empresa de multiserviços - \"Nice Multiserviços\". Chama a Nice!"
+    },
+    "hivetron-technology-v2": {
+      "description": "Este é o portfólio da HIVETRON Technology, desenvolvedores especializados que transformam ideias em soluções personalizadas e inovadoras."
+    },
+    "circulo-de-sangue": {
+      "description": "Página destinada ao role play. Contará com vários títulos e suas respectivas regras, lores e etc."
+    },
+    "hivetron-technology": {
+      "description": "Este é o portfólio da HIVETRON Technology, desenvolvedores especializados que transformam ideias em soluções personalizadas e inovadoras."
+    },
+    "metroid-burger": {
+      "description": "Gerenciamento de uma hamburgueria: pedidos, produtos e usuários em uma interface inspirada no universo de Metroid.",
+      "category": "Aplicação full stack",
+      "tags": ["Full stack", "JavaScript", "Gestão de pedidos"]
+    },
+    "previsao-tempo": {
+      "description": "Visualiza a previsão do tempo na cidade desejada em tempo real."
+    },
+    "lucky-whale-raffles": {
+      "description": "[FULLSTACK] - Projeto para criar e gerenciar campanhas sem fins lucrativos para ajudar quem precisa oferendo brindes aos doadores."
+    },
+    "diabetes-desease-project": {
+      "description": "Este material faz parte de um trabalho acadêmico desenvolvido para uma turma do curso Técnico em Enfermagem da Escola GRAU Técnico, como parte das atividades avaliativas."
+    },
+    "toggle-theme": {
+      "description": "Código rápido para alternar temas. Por exemplo: claro / escuro."
+    },
+    "password-generator": {
+      "description": "Gerador de senhas com personalização e quantificação de segurança, alterações e criação em tempo real."
+    },
+    "sitePortfolio": {
+      "description": "Para ver os códigos e a progressão do conhecimento - Portóflio sempre em desenvolvimento porque o aprendizado nunca para!"
+    },
+    "photo-editor": {
+      "description": "Um editor de fotos simples e direto, com redimensionamento de imagens feito com JavaScript.",
+      "category": "Ferramenta interativa",
+      "tags": ["JavaScript", "Imagens", "Interatividade"]
+    },
+    "pokedex": {
+      "description": "Pesquise seu Pokémon favorito com essa Pokédex. Já são mais de 1k!"
+    },
+    "user-register": {
+      "description": "Uma agenda de contatos divertida, rápida e fácil. Não perca mais seus contatos."
+    },
+    "simple-todolist": {
+      "description": "Lista de tarefas simples para implementar em qualquer lugar de forma rápida e fácil."
+    },
+    "music-player": {
+      "description": "JHAB-Play é um reprodutor de música pessoal para ouvir e relaxar. Você pode colocar suas músicas favoritas nele."
+    },
+    "fat-bird": {
+      "description": "Um joguinho para passar o tempo. Clique para se manter voando e cuidado com a cabeça!"
+    },
+    "gta-v-sitest": {
+      "description": "Landingpage GTA V - Conheça o jogo, compre ou obtenha suporte direto da Rockstar."
+    },
+    "piece-project": {
+      "description": "Uma página com informações sobre os personagens do anime One Piece. (HTML-CSS-JavaScript)"
+    },
+    "cash-converter": {
+      "description": "Conversor de moedas. Converta valores para diferentes moedas de diferentes países em um clique."
+    },
+    "landingpage-devgrid": {
+      "description": "Projeto didático para prática de base HTML e CSS, porém, escalável e de fácil adaptação para negócios ou outras ferramentas."
+    },
+    "xmen-project": {
+      "description": "Página dos X-Men - ao passar o mouse sobre o cartão do personagem, os dados são alterados de acordo com a seleção."
+    },
+    "landingpage-mario": {
+      "description": "Landing page dos melhores encanadores do mundo! Contando com apresentação e serviços."
+    },
+    "todolist-fullstack": {
+      "description": "Nessa “To Do List”, foram usados Docker e MySQL, bem como Node.js e React.js. Projeto realizado para prática de aplicação Fullstack."
+    },
+    "imc-calculator": {
+      "description": "Calcule seu IMC informando seu peso e altura e fique de olho no resultado! Saúde em primeiro lugar."
+    },
+    "countries-search": {
+      "description": "Uma interface para pesquisar países e explorar informações sobre o mundo. Um projeto de prática e evolução com React.",
+      "category": "Exploração de dados",
+      "tags": ["React", "JavaScript", "Pesquisa de países"]
+    },
+    "memory-game": {
+      "description": "Teste sua memória com esse divertido jogo com as figuras engraçadas de Rick e Morty. Faça login para se rankear e disputar com seus amigos!"
+    },
+    "random-numbers-gen": {
+      "description": "Faça sorteios de números aleatórios com este gerador super simples e funcional."
+    },
+    "jokempo-lizard-spock": {
+      "description": "Uma variação do clássico jokenpô e apresentada na divertida série “The Big Bang Theory”."
+    }
+  }
+}

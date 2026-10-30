@@ -12,12 +12,14 @@ O projeto preserva a identidade original: fundo tecnológico, paleta azul, verde
 
 As duas versões usam HTML, CSS e JavaScript puros. As tags preservam o código e os arquivos de cada etapa, sem duplicar o site em pastas na versão atual.
 
-| Versão | O que representa                                                                                              | Código                                                                           |
-| ------ | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| 1.0.0  | Portfólio original: identidade visual, interações e primeiras soluções com a base da web.                     | [Explorar a versão 1.0](https://github.com/SrBaliardo/sitePortfolio/tree/v1.0.0) |
-| 2.0.0  | Evolução da apresentação profissional, acessibilidade, responsividade, desempenho e organização dos projetos. | [Explorar a versão 2.0](https://github.com/SrBaliardo/sitePortfolio/tree/v2.0.0) |
+| Versão | O que representa                                                                                    | Código                                                                               |
+| ------ | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1.0.0  | Portfólio original: identidade visual, interações e primeiras soluções com a base da web.           | [Explorar a versão 1.0](https://github.com/SrBaliardo/sitePortfolio/tree/v1.0.0)     |
+| 2.0.0  | Evolução da apresentação profissional, acessibilidade, responsividade, desempenho, temas e idiomas. | [Explorar a versão 2.0 atual](https://github.com/SrBaliardo/sitePortfolio/tree/main) |
 
-[Comparar as alterações entre 1.0 e 2.0](https://github.com/SrBaliardo/sitePortfolio/compare/v1.0.0...v2.0.0) · [Histórico das versões](CHANGELOG.md)
+[Comparar a versão 1.0 com a 2.0 atual](https://github.com/SrBaliardo/sitePortfolio/compare/v1.0.0...main) · [Marco inicial da versão 2.0](https://github.com/SrBaliardo/sitePortfolio/tree/v2.0.0) · [Histórico das versões](CHANGELOG.md)
+
+A versão 2.0 continua evoluindo na branch `main`. As tags `v1.0.0` e `v2.0.0` preservam seus marcos originais e não são alteradas por novas funcionalidades.
 
 | Versão 1.0                                                            | Versão 2.0                                                    |
 | --------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -39,6 +41,7 @@ Depois, acesse `http://127.0.0.1:5500`.
 - `css/`: estilos, variáveis de identidade visual, tipografia local e adaptações de tela.
 - `js/`: scripts separados por função, incluindo carrossel, menu, currículo, busca e integração com o GitHub.
 - `js/projectsData.js`: seleção local para manter os projetos disponíveis sem conexão com o GitHub.
+- `locales/pt-BR.json` e `locales/en-US.json`: mensagens da interface e descrições dos projetos em português e inglês.
 - `images/`: foto de perfil, identidade visual, imagem de compartilhamento e prévias WebP dos projetos. Somente os arquivos utilizados permanecem na versão atual.
 - `docs/evolution/`: registro visual da versão original para comparação.
 - `fonts/`: fontes Gugi e Roboto e suas licenças OFL.
@@ -56,6 +59,16 @@ Para alterar os destaques, atualize os cards de `.featured-grid` no HTML e a lis
 
 Os controles utilizam elementos nativos, nomes acessíveis e foco visível. O menu pode ser fechado com Esc, assim como o currículo, que devolve o foco ao elemento de origem. A reprodução automática do carrossel é opcional, pausa durante a interação e respeita a preferência por movimento reduzido.
 
+## Temas, idiomas e carregamento
+
+O controle acima do menu alterna entre **Original**, com a identidade tecnológica do portfólio, e **Brisa**, com superfícies sólidas, cores suaves e uma apresentação mais tranquila. Os botões de idioma oferecem português do Brasil e inglês dos Estados Unidos. As duas preferências são salvas no navegador quando o armazenamento está disponível; a primeira visita usa Original e português.
+
+A internacionalização usa JavaScript nativo e arquivos JSON, sem bibliotecas, serviços de tradução ou etapa de build. Os arquivos precisam ser servidos por HTTP, como no Live Server ou no comando de execução local acima.
+
+Para editar uma tradução, mantenha as mesmas chaves de `messages` nos dois JSONs. As descrições, categorias e características dos projetos ficam em `projects`, identificados pelo nome do repositório. Nomes próprios, marcas e tecnologias são preservados. Projetos novos sem tradução recebem uma descrição neutra em inglês até que seu texto seja adicionado ao JSON. O documento PDF do currículo continua em português, com essa informação indicada na interface em inglês; textos dentro das capturas dos projetos também pertencem às próprias imagens.
+
+Cada tema tem seu loading: formas geométricas e detalhes neon no Original; horizonte, sol e ondas suaves no Brisa. O indicador principal acompanha a inicialização e a troca de preferências, sem percentuais simulados. Há indicadores locais para GitHub, imagens e currículo. Falhas de rede encerram o estado de carregamento e mantêm a interface utilizável. As animações respeitam a preferência por movimento reduzido.
+
 ## Backup da revisão
 
 A versão anterior está preservada na tag `v1.0.0`, com todos os seus arquivos. Os GIFs, imagens antigas e outros recursos substituídos podem ser consultados nessa versão, mesmo após sua remoção da pasta atual.
@@ -65,7 +78,7 @@ O ZIP original verificado também permanece em `.backups/`, com os arquivos e o 
 Para comparar o código localmente:
 
 ```powershell
-git diff v1.0.0 v2.0.0 -- index.html css js
+git diff v1.0.0 main -- index.html css js locales
 ```
 
 Para consultar a versão antiga, use a tag no GitHub ou faça um clone separado. Assim, os arquivos da versão atual continuam disponíveis na pasta de trabalho.

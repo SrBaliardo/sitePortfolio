@@ -1,4 +1,4 @@
-(() => {
+window.PortfolioI18n.ready.then(() => {
   const text = document.querySelector(".function");
   const cursor = document.querySelector(".typing-cursor");
   const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -40,4 +40,4 @@
   motion.addEventListener("change", synchronize);
   document.addEventListener("visibilitychange", synchronize);
   synchronize();
-})();
+});

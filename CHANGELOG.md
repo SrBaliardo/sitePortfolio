@@ -1,5 +1,18 @@
 # Histórico de versões
 
+## Evolução da versão 2.0 — temas e internacionalização
+
+- Temas Original e Brisa, selecionados no cabeçalho e persistidos no navegador.
+- Interface em português e inglês com JSONs locais, incluindo descrições dos 31 projetos, controles, mensagens e textos de acessibilidade.
+- Bandeiras SVG e controles de tema e idioma acima do menu, com adaptações para telas pequenas.
+- Dois loadings construídos com HTML, CSS, SVG e JavaScript: geometria neon no Original e horizonte com ondas no Brisa.
+- Indicadores locais de carregamento do GitHub, imagens e currículo, além do gerenciamento de operações simultâneas e da restauração de foco.
+- Recuperação de falhas de tradução, cache de dicionários e funcionamento sem armazenamento local.
+- Conteúdo original em português disponível quando o JavaScript está desativado.
+- A tag da versão 1.0 e o marco inicial da versão 2.0 permanecem intactos; esta evolução integra somente a branch atual.
+
+Validação desta evolução: dez larguras em cada uma das quatro combinações de tema e idioma; auditorias automáticas de acessibilidade em celular, desktop e nos dois loadings; falhas e timeout de tradução; cache, operações simultâneas, resposta tardia do GitHub, armazenamento indisponível e uso sem JavaScript.
+
 ## 2.0.0 — 2026-10-30
 
 Evolução do portfólio mantendo HTML, CSS e JavaScript puros e a identidade visual original.

@@ -1,0 +1,214 @@
+{
+  "messages": {
+    "meta.title": "John Baliardo | Front-End Developer",
+    "meta.description": "Portfolio of John Baliardo, Front-End Developer. Explore my projects, skills and web solutions focused on intuitive, efficient interfaces.",
+    "meta.socialDescription": "Intuitive interfaces, projects with personality and web development. Explore my work.",
+    "meta.imageAlt": "John Baliardo, Front-End Developer",
+    "nav.skip": "Skip to content",
+    "nav.home": "John Baliardo, home",
+    "nav.label": "Main navigation",
+    "nav.about": "About me",
+    "nav.skills": "Skills",
+    "nav.projects": "Projects",
+    "nav.contact": "Contact",
+    "hero.eyebrow": "Creativity & web development",
+    "hero.role": "Front-End Developer",
+    "hero.description": "I turn ideas into intuitive, efficient interfaces with personality.",
+    "hero.projects": "Explore my projects",
+    "contact.talk": "Let’s talk",
+    "hero.social": "Profiles and résumé",
+    "hero.scroll": "A little about me",
+    "about.eyebrow": "The person behind the code",
+    "about.intro": "<strong>Hi, I’m John Baliardo.</strong> I’m the <strong>front-end lead at SIFAT</strong>, where I work on an ERP, primarily with React, and manage the front-end team, including the front-end work of full-stack developers.",
+    "about.experience": "I’ve been working in development since January 2023 and also take on occasional projects, with experience in ERP systems and other web applications.",
+    "about.history": "My journey began with graphic design, image editing and website creation, and also included teaching computing and web development. That experience shapes my attention to intuitive interfaces and the people who use them.",
+    "about.stack": "My main stack is <strong>React, JavaScript and Styled-Components/CSS</strong>. I’m also familiar with Tailwind CSS, TypeScript, REST APIs and UX/UI. I have full-stack development training and use Node.js on the back end with MongoDB, PostgreSQL and SQLite, as well as Electron.js for desktop applications.",
+    "about.values": "I value clear communication, objectivity and planning, both when building solutions and collaborating with the team, with a commitment to quality and delivery deadlines.",
+    "about.contacts": "View contacts",
+    "contact.direct": "Direct message",
+    "about.photoAlt": "Photo of John Baliardo",
+    "about.caption": "Design meets code.",
+    "about.captionDetail": "Interfaces designed for the people who use them.",
+    "skills.eyebrow": "Tools to build with",
+    "skills.intro": "Strong foundations, curiosity to learn and attention to the user experience.",
+    "skills.daily": "Day to day",
+    "skills.main": "My main stack",
+    "skills.possibilities": "Expanding possibilities",
+    "skills.repertoire": "Also in my toolkit",
+    "skills.beyond": "Beyond the interface",
+    "skills.leadership": "Front-end team leadership and management",
+    "skills.desktop": "Electron.js and desktop applications",
+    "skills.ai": "AI agents in development workflows",
+    "skills.git": "Git and GitHub",
+    "skills.api": "REST API integration",
+    "skills.databases": "MongoDB, PostgreSQL, MySQL and SQLite",
+    "skills.design": "UX/UI and graphic design",
+    "skills.images": "Image creation and editing",
+    "skills.data": "Python and Power BI",
+    "skills.values": "<strong>How I work:</strong> clear communication, objectivity, planning and problem-solving, in team collaboration and at every stage of delivery.",
+    "projects.eyebrow": "Ideas brought to life through code",
+    "projects.title": "Featured projects",
+    "projects.intro": "A selection to show you how I build.",
+    "projects.github": "All projects on GitHub",
+    "projects.explore": "Keep exploring",
+    "carousel.previous": "Previous projects",
+    "carousel.next": "Next projects",
+    "projects.search": "Search projects",
+    "projects.searchPlaceholder": "Name, description or technology",
+    "projects.language": "Main language",
+    "projects.allLanguages": "All languages",
+    "projects.region": "Other projects, horizontal list",
+    "projects.empty": "No projects found. Try another name or language.",
+    "projects.clear": "Clear filters",
+    "contact.eyebrow": "Let’s create something together",
+    "contact.title": "A good idea starts<br>with a conversation.",
+    "contact.intro": "Have a project in mind or want to talk about technology? Choose the best way to get in touch.",
+    "contact.connect": "Let’s connect",
+    "contact.code": "Explore my code",
+    "contact.email": "Email",
+    "contact.idea": "Share your idea",
+    "resume.view": "View my résumé",
+    "nav.top": "Back to top",
+    "resume.title": "Résumé · John Baliardo",
+    "resume.close": "Close résumé",
+    "resume.open": "Open in a new tab",
+    "resume.download": "Download PDF",
+    "projects.features": "Features",
+    "hero.rolePrefix": "",
+    "hero.roleSuffix": "Developer",
+    "about.more": "More about my journey",
+    "about.less": "Show less",
+    "nav.open": "Open menu",
+    "nav.close": "Close menu",
+    "carousel.play": "Start autoplay",
+    "carousel.pause": "Pause autoplay",
+    "carousel.reduced": "Autoplay disabled: reduced motion",
+    "projects.count_one": "{count} public project found.",
+    "projects.count_other": "{count} public projects to explore.",
+    "projects.generic": "Project",
+    "projects.fallback": "Explore this project’s source code, structure and purpose on GitHub.",
+    "projects.saved": "Showing the saved selection. Explore the latest projects on GitHub too.",
+    "projects.fetching": "Checking GitHub for new projects…",
+    "projects.view": "View project",
+    "projects.code": "Source code",
+    "projects.openLabel": "Open {title}",
+    "projects.codeLabel": "View source code for {title}",
+    "projects.imageAlt": "Interface of the {title} project",
+    "preferences.label": "Appearance and language preferences",
+    "preferences.theme": "Brisa theme",
+    "preferences.themeHelp": "Switch between Original and Brisa themes",
+    "preferences.language": "Language",
+    "preferences.portuguese": "Portuguese (Brazil)",
+    "preferences.english": "English (United States)",
+    "preferences.error": "The language could not be changed. Please try again.",
+    "loading.interface": "Preparing your experience…",
+    "loading.theme.original": "Switching to the Original theme…",
+    "loading.theme.brisa": "A gentle breeze is on its way…",
+    "loading.language": "Preparing your language…",
+    "loading.detail": "Just a moment. Taking care of the finishing touches.",
+    "resume.loading": "Loading résumé…",
+    "resume.iframe": "John Baliardo’s résumé in PDF",
+    "resume.language": "This résumé is available in Portuguese."
+  },
+  "projects": {
+    "veding-machine": {
+      "description": "An Electron.js project for commemorative-medal vending machines, with a local database and payment/product-release integration mocked in the repository."
+    },
+    "appWeb_Aurora": {
+      "description": "A children’s gaming platform featuring books from “Menina Aurora e a Capivara Curiosa” and “Aurora Goodies”."
+    },
+    "nice-multiservicos": {
+      "description": "A website for Nice Multiserviços, a multiservice company. Get in touch with Nice!"
+    },
+    "hivetron-technology-v2": {
+      "description": "The portfolio of HIVETRON Technology, a team of developers turning ideas into innovative, custom solutions."
+    },
+    "circulo-de-sangue": {
+      "description": "A role-playing website bringing together different titles, their rules, lore and related content."
+    },
+    "hivetron-technology": {
+      "description": "The portfolio of HIVETRON Technology, a team of developers turning ideas into innovative, custom solutions."
+    },
+    "metroid-burger": {
+      "description": "A burger restaurant management application for orders, products and users, with an interface inspired by the Metroid universe.",
+      "category": "Full-stack application",
+      "tags": ["Full stack", "JavaScript", "Order management"]
+    },
+    "previsao-tempo": {
+      "description": "Check the current weather forecast for a city of your choice."
+    },
+    "lucky-whale-raffles": {
+      "description": "A full-stack project for creating and managing nonprofit fundraising campaigns, with gifts for donors."
+    },
+    "diabetes-desease-project": {
+      "description": "An academic project created for a nursing technician class at GRAU Técnico as part of their coursework."
+    },
+    "toggle-theme": {
+      "description": "A small, reusable theme switcher, such as switching between light and dark modes."
+    },
+    "password-generator": {
+      "description": "A customizable password generator with strength feedback and real-time updates."
+    },
+    "sitePortfolio": {
+      "description": "A portfolio documenting code and the evolution of my skills. Always a work in progress, because learning never stops!"
+    },
+    "photo-editor": {
+      "description": "A simple, straightforward photo editor with image resizing built in JavaScript.",
+      "category": "Interactive tool",
+      "tags": ["JavaScript", "Images", "Interactivity"]
+    },
+    "pokedex": {
+      "description": "Find your favorite Pokémon in this Pokédex, with more than a thousand to explore."
+    },
+    "user-register": {
+      "description": "A quick, simple and playful contact organizer to keep your contacts together."
+    },
+    "simple-todolist": {
+      "description": "A simple to-do list that can be quickly and easily added to other projects."
+    },
+    "music-player": {
+      "description": "JHAB-Play is a personal music player for listening and relaxing. Add your favorite tracks."
+    },
+    "fat-bird": {
+      "description": "A little game to pass the time. Click to keep flying, and watch your head!"
+    },
+    "gta-v-sitest": {
+      "description": "A GTA V landing page to discover the game and access purchase or support options from Rockstar."
+    },
+    "piece-project": {
+      "description": "A page with information about One Piece characters, built with HTML, CSS and JavaScript."
+    },
+    "cash-converter": {
+      "description": "A currency converter that lets you convert amounts between currencies from different countries in one click."
+    },
+    "landingpage-devgrid": {
+      "description": "An educational HTML and CSS project designed to be adaptable to businesses and other tools."
+    },
+    "xmen-project": {
+      "description": "An X-Men character page that updates the displayed information as you hover over each character card."
+    },
+    "landingpage-mario": {
+      "description": "A landing page for the world’s best plumbers, presenting their story and services."
+    },
+    "todolist-fullstack": {
+      "description": "A to-do list built with Docker, MySQL, Node.js and React as a full-stack development exercise."
+    },
+    "imc-calculator": {
+      "description": "Enter your weight and height to calculate your BMI and view the result."
+    },
+    "countries-search": {
+      "description": "An interface for finding countries and exploring information about the world. A project for practicing and developing React skills.",
+      "category": "Data exploration",
+      "tags": ["React", "JavaScript", "Country search"]
+    },
+    "memory-game": {
+      "description": "Challenge your memory with a playful Rick and Morty card game. Sign in to join the rankings and compete with friends!"
+    },
+    "random-numbers-gen": {
+      "description": "A simple, practical random-number generator for drawing numbers."
+    },
+    "jokempo-lizard-spock": {
+      "description": "A variation of rock-paper-scissors featured in “The Big Bang Theory”."
+    }
+  }
+}
