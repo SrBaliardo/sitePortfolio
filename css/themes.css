@@ -41,12 +41,18 @@
   background: #c4d7df;
 }
 [data-theme="brisa"] .border::before {
-  animation: none;
-  background: #90b2bf;
-  inset: 0;
+  animation: animate-border 12s linear infinite;
+  background: conic-gradient(
+    transparent 0deg 70deg,
+    #719c9a 90deg 150deg,
+    transparent 170deg 250deg,
+    #6f92ad 270deg 330deg,
+    transparent 350deg
+  );
+  inset: -20%;
 }
 [data-theme="brisa"] .border::after {
-  inset: 2px;
+  inset: 3px;
   background: #e5eef1;
 }
 [data-theme="brisa"] .portrait-panel,
