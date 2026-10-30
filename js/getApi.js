@@ -178,8 +178,8 @@
     status.textContent =
       filtered.length +
       (filtered.length === 1
-        ? " projeto encontrado."
-        : " projetos para explorar.") +
+        ? " projeto público encontrado."
+        : " projetos públicos para explorar.") +
       (sourceMessage ? " " + sourceMessage : "");
 
     if (focusedProject && focusedLabel) {
